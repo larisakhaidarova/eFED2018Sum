@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Прогноз погоды</title>
@@ -9,148 +10,180 @@
 <body>
 
     <header>
-        <a href="./index.html"> <span class="tab">Сегодня</span> </a>
-        <a href="./5days.html"><span class="tab">5 дней</span> </a>
-        <a href="./history.html"><span class="tab">История погоды</span> </a>
-    </header>
+        <a href="./index.html">
+            <nav class="tab">Сегодня</nav>
+        </a>
+        <a href="./5days.html">
+            <nav class="tab">5 дней</nav>
+        </a>
+        <a href="./history.html">
+            <nav class="tab">История погоды</nav>
+        </a>
 
-         <div class="topblock">
-        <div> Загрязнение воздуха 8.168363052618588е-8</div>
-              <form>
-                <input type="search" name="q" placeholder="Искать..."> 
+        <div class="topblock">
+            <div> Загрязнение воздуха 8.168363052618588е-8</div>
+            <form>
+                <input type="search" name="q" placeholder="Искать...">
                 <button type="submit">Поиск</button>
-             </form>
+            </form>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="box_1">
+            <div>
+                <p>Ижевск, Россия
+                    <br> среда
+                    <br> облачно
+                </p>
+            </div>
+
+            <div>
+                <p>Вероятность осадков: 20%
+                    <br> Влажность: 45%
+                    <br> Ветер: 11 км/ч
+                    <p>
+            </div>
         </div>
 
-                <div class="container">
-
-                     <div class="box_1">
-                     <div>
-                     <p>Ижевск, Россия<br>
-                      среда<br>
-                      облачно</p>
-                     </div>
-    
-    <div>
-     <p>Вероятность осадков: 20%<br>
-     Влажность: 45%<br>
-     Ветер: 11 км/ч<p>
-    </div>
-    </div>
-
-    <div class="box_2">
-           <div>
-               <img src="img/assets_Today1/Sunny_Weather.png" alt="облачно"></br>
+        <div class="box_2">
+            <div>
+                <img src="img/assets_Today1/Sunny_Weather.png" alt="облачно">
+                </br>
                 <span>22℃</span>
-           </div>
+            </div>
 
-        <div>
-            <button class="temperature">Температура</button>
-            <button class="rainfall_expectancy">Вероятность осадков</button>
-            <button class="wind">Ветер</button>
+            <div>
+                <button class="temperature">Температура</button>
+                <button class="rainfall_expectancy">Вероятность осадков</button>
+                <button class="wind">Ветер</button>
+            </div>
         </div>
     </div>
-</div>
 
     <section class="graph_container">
-       
-            
-<div class="graph">
-    <div class="item1"><nav>14</nav></div>
-    <div class="item1"><nav>14</nav></div>
-    <div class="item1"><nav>14</nav></div>
-    <div class="item2"><nav>12</nav></div>
-    <div class="item3"><nav>11</nav></div>
-    <div class="item4"><nav>13</nav></div>
-    <div class="item1"><nav>14</nav></div>
-    <div class="item1"><nav>14</nav></div>
-  </div> 
-    </section> 
-    
+
+
+        <div class="graph">
+            <div class="item1">
+                <span class="graph_numbers">14</span>
+            </div>
+            <div class="item1">
+                <span class="graph_numbers">14</span>
+            </div>
+            <div class="item1">
+                <span class="graph_numbers">14</span>
+            </div>
+            <div class="item2">
+                <span class="graph_numbers">12</span>
+            </div>
+            <div class="item3">
+                <span class="graph_numbers" v>11</span>
+            </div>
+            <div class="item4">
+                <span class="graph_numbers">13</span>
+            </div>
+            <div class="item1">
+                <span class="graph_numbers">14</span>
+            </div>
+            <div class="item1">
+                <span class="graph_numbers">14</span>
+            </div>
+        </div>
+    </section>
+
     <main id="forecast_container">
         <div class="forecast-column">
             <p>17:00</p>
 
             <div class="forecast">
                 <p>ср</p>
-                <img src="img/assets_Today1/Cloudy.png" alt="облачно"></br>
+                <img src="img/assets_Today1/Cloudy.png" alt="облачно">
+                </br>
                 <span>22° 13°</span>
             </div>
         </div>
 
         <div class="forecast-column">
-        
+
             <p>20:00</p>
 
             <div class="forecast">
                 <p>чт</p>
-                <img src="img/assets_Today1/CloudRain.png" alt="небольшой дождь"></br>
+                <img src="img/assets_Today1/CloudRain.png" alt="небольшой дождь">
+                </br>
                 <span>21° 11°</span>
             </div>
         </div>
 
         <div class="forecast-column">
-            
+
             <p>23:00</p>
 
             <div class="forecast">
                 <p>пт</p>
-                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность"></br>
+                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность">
+                </br>
                 <span>24° 12°</span>
             </div>
         </div>
 
         <div class="forecast-column">
-            
+
             <p>2:00</p>
 
             <div class="forecast">
                 <p>сб</p>
-                <img src="img/assets_Today1/CloudRain.png" alt="дождь"></br>
+                <img src="img/assets_Today1/CloudRain.png" alt="дождь">
+                </br>
                 <span>26° 13°</span>
             </div>
         </div>
 
         <div class="forecast-column">
-            
+
             <p>5:00</p>
 
             <div class="forecast">
                 <p>вс</p>
-                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность"></br>
+                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность">
+                </br>
                 <span>27° 14°</span>
             </div>
         </div>
 
         <div class="forecast-column">
-            
+
             <p>8:00</p>
 
             <div class="forecast">
                 <p>пн</p>
-                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность"></br>
+                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность">
+                </br>
                 <span>28° 14°</span>
             </div>
         </div>
 
         <div class="forecast-column">
-            
+
             <p>11:00</p>
 
             <div class="forecast">
                 <p>вт</p>
-                <img src="img/assets_Today1/CloudRain.png" alt="дождь"></br>
+                <img src="img/assets_Today1/CloudRain.png" alt="дождь">
+                </br>
                 <span>28° 14°</span>
             </div>
         </div>
 
         <div class="forecast-column">
-          
+
             <p>14:00</p>
 
             <div class="forecast">
                 <p>ср</p>
-                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность"></br>
+                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность">
+                </br>
                 <span>28° 14°</span>
             </div>
         </div>
@@ -162,27 +195,8 @@
 
     <footer>
         <center> 2018 © Copyright</center>
-   </footer>
+    </footer>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

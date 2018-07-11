@@ -127,7 +127,7 @@ footer {
     align-items: flex-end;
 }
 
-nav {
+.graph_numbers {
     display: block;
     margin-right: 146px;
     justify-content: space-between;

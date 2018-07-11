@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>История погоды</title>
@@ -9,105 +10,112 @@
 <body>
 
     <header>
-        <a href="./index.html"> <span class="tab">Сегодня</span> </a>
-        <a href="./5days.html"><span class="tab">5 дней</span> </a>
-        <a href="./history.html"><span class="tab">История погоды</span> </a>
+        <a href="./index.html">
+            <nav class="tab">Сегодня</nav>
+        </a>
+        <a href="./5days.html">
+            <nav class="tab">5 дней</nav>
+        </a>
+        <a href="./history.html">
+            <nav class="tab">История погоды</nav>
+        </a>
+
+
+        <div class="topblock">
+            <div> Ижевск, Россия </div>
+            <form>
+                <input type="search" name="q" placeholder="Искать...">
+                <button type="submit">Поиск</button>
+            </form>
+        </div>
     </header>
 
-    <div class="topblock">
-        <div> Ижевск, Россия </div>
-              <form>
-                <input type="search" name="q" placeholder="Искать..."> 
-                <button type="submit">Поиск</button>
-             </form>
-        </div>
-
-            <div class="empty"></div>
-        <main>
+    <div class="empty"></div>
+    <main>
         <table cellpadding="5">
-                <tr>
-                    <td class="gray"></td>
-                    <td>Январь</td>
-                    <td class="gray">Февраль</td>
-                    <td>Март</td>
-                    <td class="gray">Апрель</td>
-                    <td>Май</td>
-                    <td class="gray">Июнь</td>
-                    <td>Июль</td>
-                    <td class="gray">Август</td>
-                    <td>Сентябрь</td>
-                    <td class="gray">Октябрь</td>
-                    <td>Ноябрь</td>
-                    <td class="gray">Декабрь</td>
-                </tr>
-                <tr>
-                    <td>Средний максимум</td>
-                    <td class="gray">-9°</td>
-                    <td>-8°</td>
-                    <td class="gray">-1°</td>
-                    <td>7°</td>
-                    <td class="gray">18°</td>
-                    <td>23°</td>
-                    <td class="gray">25°</td>
-                    <td>22°</td>
-                    <td class="gray">15°</td>
-                    <td>7°</td>
-                    <td class="gray">-2°</td>
-                    <td>-7°</td>
-                </tr>
+            <tr>
+                <td class="gray"></td>
+                <td>Январь</td>
+                <td class="gray">Февраль</td>
+                <td>Март</td>
+                <td class="gray">Апрель</td>
+                <td>Май</td>
+                <td class="gray">Июнь</td>
+                <td>Июль</td>
+                <td class="gray">Август</td>
+                <td>Сентябрь</td>
+                <td class="gray">Октябрь</td>
+                <td>Ноябрь</td>
+                <td class="gray">Декабрь</td>
+            </tr>
+            <tr>
+                <td>Средний максимум</td>
+                <td class="gray">-9°</td>
+                <td>-8°</td>
+                <td class="gray">-1°</td>
+                <td>7°</td>
+                <td class="gray">18°</td>
+                <td>23°</td>
+                <td class="gray">25°</td>
+                <td>22°</td>
+                <td class="gray">15°</td>
+                <td>7°</td>
+                <td class="gray">-2°</td>
+                <td>-7°</td>
+            </tr>
 
-                <tr>
-                    <td class="gray">Средний минимум</td>
-                    <td>-16°</td>
-                    <td class="gray">-15°</td>
-                    <td>-9°</td>
-                    <td class="gray">-1°</td>
-                    <td>7°</td>
-                    <td class="gray">12°</td>
-                    <td>14°</td>
-                    <td class="gray">12°</td>
-                    <td>7°</td>
-                    <td class="gray">0°</td>
-                    <td>-7°</td>
-                    <td class="gray">-13°</td>
-                </tr>
+            <tr>
+                <td class="gray">Средний минимум</td>
+                <td>-16°</td>
+                <td class="gray">-15°</td>
+                <td>-9°</td>
+                <td class="gray">-1°</td>
+                <td>7°</td>
+                <td class="gray">12°</td>
+                <td>14°</td>
+                <td class="gray">12°</td>
+                <td>7°</td>
+                <td class="gray">0°</td>
+                <td>-7°</td>
+                <td class="gray">-13°</td>
+            </tr>
 
-                <tr>
-                    <td>Рекордный максимум</td>
-                    <td class="gray">3°</td>
-                    <td>3°</td>
-                    <td class="gray">9°</td>
-                    <td>24°</td>
-                    <td class="gray">30°</td>
-                    <td>36°</td>
-                    <td class="gray">38°</td>
-                    <td>37°</td>
-                    <td class="gray">30°</td>
-                    <td>22°</td>
-                    <td class="gray">12°</td>
-                    <td>4°</td>
-                </tr>
-                <tr>
-                    <td class="gray">Рекордный минимум</td>
-                    <td>-39°</td>
-                    <td class="gray">-39°</td>
-                    <td>-30°</td>
-                    <td class="gray">-22°</td>
-                    <td>-7°</td>
-                    <td class="gray">0°</td>
-                    <td>4°</td>
-                    <td class="gray">1°</td>
-                    <td>-4°</td>
-                    <td class="gray">-21°</td>
-                    <td>-29°</td>
-                    <td class="gray">-40°</td>
-                </tr>
-            </table>
-        </main>
-        
-        <footer>
-             <center> 2018 © Copyright</center>
-        </footer>
+            <tr>
+                <td>Рекордный максимум</td>
+                <td class="gray">3°</td>
+                <td>3°</td>
+                <td class="gray">9°</td>
+                <td>24°</td>
+                <td class="gray">30°</td>
+                <td>36°</td>
+                <td class="gray">38°</td>
+                <td>37°</td>
+                <td class="gray">30°</td>
+                <td>22°</td>
+                <td class="gray">12°</td>
+                <td>4°</td>
+            </tr>
+            <tr>
+                <td class="gray">Рекордный минимум</td>
+                <td>-39°</td>
+                <td class="gray">-39°</td>
+                <td>-30°</td>
+                <td class="gray">-22°</td>
+                <td>-7°</td>
+                <td class="gray">0°</td>
+                <td>4°</td>
+                <td class="gray">1°</td>
+                <td>-4°</td>
+                <td class="gray">-21°</td>
+                <td>-29°</td>
+                <td class="gray">-40°</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <center> 2018 © Copyright</center>
+    </footer>
 </body>
 
 
