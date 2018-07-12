@@ -10,7 +10,7 @@ header {
     width: 100%;
 }
 
-.tab {
+a {
     cursor: pointer;
     border: 1px solid #C0C0C0;
 	display: inline-block;
@@ -24,7 +24,7 @@ header {
     margin: 5px;
 }
 
-.tab:hover {
+a:hover {
     background: #A9A9A9;
 }
 
