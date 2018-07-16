@@ -30,14 +30,12 @@ a:hover {
 
 form {
     float: right;
-    position: relative;
 }
 
 .topblock {
     font-size: 12px;
     background-color: #F5F5F5;
     border: 1px solid #C0C0C0;
-    position: relative;
 	float: left;
     display: inline;
     width: 100%
@@ -153,10 +151,10 @@ td {
 
 /*5days страница*/
 .weather_general {
-    position: relative;
 	width: 1200px;
 	height: 350px;
     left: 100px;
+    position: relative;
 	top: 15px;
 }
 
@@ -196,7 +194,6 @@ td {
 }
 
 .imgs_weather{
-	position: relative;
 	float: left;
 	width: 24px;
     height: 50px;
@@ -207,7 +204,6 @@ td {
 }
 
 .weathertable-weather-temperature{
-	position: relative;
 	float: left;
 	width: 1200px;
 	height: 30px;
