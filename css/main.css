@@ -22,6 +22,7 @@ a {
     padding: 5px;
     width: 120px;
     margin: 5px;
+    text-decoration: none; 
 }
 
 a:hover {
@@ -49,7 +50,7 @@ form {
 }
 
 .box_1, .box_2 {
-    white-space:nowrap;
+    white-space: nowrap;
     display: inline-block;
 }
 
@@ -60,8 +61,13 @@ form {
 
 
 #forecast_container {
-    display: flex;
-    justify-content: space-around;
+    margin-left: 5px;
+    
+}
+
+.forecast-column {
+    float: left;
+    margin-right: 60px;
 }
 
 footer {
@@ -78,13 +84,11 @@ footer {
 }
 .graph {
     border-bottom:solid 1px #000000;
-    display: flex;
-    align-items: flex-end;
-    
+    margin-left: 60px;
 }
 
 .graph_container {
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 .item2 {
@@ -94,8 +98,9 @@ footer {
     width: 10px;
     margin-right: 160px;
     display: block;
-    align-items: flex-end;
+    float: left;
 }
+
 .item1 {
     height: 50px;
     width: 10px;
@@ -103,26 +108,27 @@ footer {
     background-color: rgb(134, 134, 134);
     justify-content: space-between;
     display: block;
-    align-items: flex-end;
+    float: left;
 }
+
 .item3 {
     background-color: rgb(134, 134, 134);
     justify-content: space-between;
     height: 20px;
     width: 10px;
     margin-right: 160px;
-    display:block;
-    align-items: flex-end;
+    display: block;
+    float: left;
 }
+
 .item4 {
-    
     margin-right: 160px;
     background-color: rgb(134, 134, 134);
     justify-content: space-between;
     height: 30px;
     width: 10px;
     display: block;
-    align-items: flex-end;
+    float: left;
 }
 
 .graph_numbers {
@@ -154,29 +160,27 @@ td {
 	width: 1200px;
 	height: 350px;
     left: 100px;
-    position: relative;
+    margin-left: 150px;
 	top: 15px;
 }
 
 .five_dates {
-	position: relative;
 	float: left;
     width: 1200px;
 	top: 7px;
-    height: 30px;
+    height: 40px;
+    margin-bottom: -9px;
 }
 
 .date {
-	position: relative;
 	float: left;
     width: 200px;
     text-align: center;
-    height: 20px;
+    height: 30px;
 	border: 1px solid;
 }
 
 .weathertable-weather{
-	position: relative;
 	float: left;
 	width: 1200px;
 	height: 91px;
@@ -190,17 +194,20 @@ td {
 	height: 100px;
 	border-left: 1px solid;
     border-top: 1px solid;
-    position: relative;
 }
 
 .imgs_weather{
 	float: left;
 	width: 24px;
     height: 50px;
-	margin-right: 25px;
+    margin-left: 3px;
+	margin-right: 22px;
 }
 .daytime {
-	font-size: 13px;
+    font-size: 13px;
+    float: left;
+    margin-right: 24px;
+    margin-left: 5px;
 }
 
 .weathertable-weather-temperature{
@@ -209,7 +216,6 @@ td {
 	height: 30px;
 }
 .weathertable-weather-temperature-box {
-	position: relative;
 	float: left;
     width: 200px;
 	border-left: 1px solid;
@@ -218,16 +224,17 @@ td {
 	top: -1px;
 }
 .wind {
-	position: relative;
+	
 	float: left;
 	width: 25px;
 	height: 15px;
-	border: 1px solid;
-    margin-right: 5px;
+    border: 1px solid;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 20px;
 }
     
 .weathertable-middleline {
-    position: relative;
     float: left;
     background-color: silver;
     width: 1008px;
@@ -238,17 +245,18 @@ td {
 }
 
 .weathertable-middleline-row {
-    position: relative;
+    
     float: left;
     width: 1200px;
     height: 25px;
     top:5px;
     text-align: center;
+    margin-top: 5px;
     left: -1px;
 }
 
 .weathertable-middleline-row-box {
-    position: relative;
+    
     float: left;
     width: 200px;
     height: 30px;
@@ -258,33 +266,32 @@ td {
 }
 
 .weathertable-middleline-row-box-value {
-    position: relative;
     float: left;
     width: 18px;
     height: 15px;
     background-color:  #DCDCDC;
     border: 1px solid;
-    margin-right: 5px;
-    margin-top: 1px;	
+    margin-right: 6px;
+    margin-top: 2px;	
 }
 
 .weathertable-middleline-2 {
     float: left;
     background-color: silver;
     width: 1008px;
-    position: relative;
     height: 25px;
     border: 1px solid;
     top: 27px;
+    margin-top: 28px;
     text-align: center;
 }
 
 .weathertable-rainfall {
-    position: relative;
+    margin-top: -8px;
     float: left;
     width: 1200px;
     height: 61px;
-    top: 20px;	
+    top: 30px;	
 }
 
 .rainfall_info {
@@ -292,14 +299,13 @@ td {
     width: 200px;
     height: 60px;
     top: 8px;
-    position: relative;
+    margin-top: 7px;
     border-left: 1px solid;
     border-bottom: 1px solid;
     border-right: 1px solid;
 }
 
 .rainfall {
-    position: relative;
     float: left;
     width: 30px;
     height: 22px;
@@ -309,81 +315,72 @@ td {
 }
     
 .weathertable-water {
-    position: relative;
     float: left;
     width: 1200px;
     height: 14px;
 }
 
 .middle {
-    position: relative;
     float: left;
     width: 1008px;
     height: 30px;
     background-color: silver;
     left: 45px;
     margin-top: 50px;
+    margin-left: 150px;
 }
 
 .two_sections {
-	position: relative;
 	float: left;
 	width: 1200px;
 	height: 180px;
-	left: 45px;
+    left: 45px;
+    margin-left: 150px;
 }
 
 .left_side {
-	position: relative;
 	float: left;
 	width: 255px;
 	height: 180px;
 }
 
 .Left_side_image {
-	position: relative;
 	float: left;
 	width: 100px;
 	height: 105px;
 }
 
 .right_side {
-	position: relative;
 	float: right;
 	width: 300px;
 	height: 180px;
 }
 
 .right_side_image {
-	position: relative;
 	float: left;
 	width: 100px;
 	height: 105px;
 }
 
 .left_text {
-	position: relative;
 	float: left;
 	width: 155px;
-	height: 105px;
+    height: 105px;
 }
 
 .right_text {
-	position: relative;
 	float: left;
 	width: 155px;
 	height: 105px;
 }
 
 .left_sentence {
-	position: relative;
 	float: left;
 	width: 400px;
 	height: 75px;
 }
 
-.right_sentence{
-	position: relative;
+.right_sentence {
 	float: left;
 	width: 400px;
 	height: 75px;
