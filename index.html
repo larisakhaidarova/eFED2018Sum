@@ -4,34 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Прогноз погоды</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
         <nav>
-            <a href="./index.html">
-                Сегодня
-            </a>
-            <a href="./5days.html">
-                5 дней
-            </a>
-            <a href="./history.html">История погоды
-            </a>
+            <a href="./index.html">Сегодня</a>
+            <a href="./5days.html">5 дней</a>
+            <a href="./history.html">История погоды</a>
         </nav>
-
+        
         <div class="topblock">
-            <div> Загрязнение воздуха 8.168363052618588е-8</div>
-            <form>
-                <input type="search" name="q" placeholder="Искать...">
-                <button type="submit">Поиск</button>
-            </form>
+            <p>Загрязнение воздуха 8.168363052618588е-8</p>
+            <div class="topblock__right">
+            <div class="topblock__right__searchbar">
+                <i class="fa fa-search"></i>
+                <input type="search" name="q" placeholder="Поиск"/>
+            </div>
+            </div>
         </div>
     </header>
-    <main class="container">
 
-        <div class="box_1">
+    <main class="index-page-wrapper">
+    <div class="general-information">
+
+        <div class="general-information__left">
             <div>
                 <p>Ижевск, Россия
                     <br> среда
@@ -43,27 +42,25 @@
                 <p>Вероятность осадков: 20%
                     <br> Влажность: 45%
                     <br> Ветер: 11 км/ч
-                    <p>
+                </p>
             </div>
         </div>
 
-        <div class="box_2">
+        <div class="general-information__right">
             <div>
-                <img src="img/assets_Today1/Sunny_Weather.png" alt="облачно">
-                </br>
+                <img src="img/Sunny_Weather.png" alt="облачно">
                 <span>22℃</span>
             </div>
 
-            <div>
-                <button class="temperature">Температура</button>
-                <button class="rainfall_expectancy">Вероятность осадков</button>
-                <button class="windy">Ветер</button>
+            <div class="general-information__right__buttons">
+                <button class="general-information__right__buttons__temperature">Температура</button>
+                <button class="general-information__right__buttons__rainfall-expectancy">Вероятность осадков</button>
+                <button class="general-information__right__buttons__windy">Ветер</button>
             </div>
         </div>
-    </main>
+    </div>
 
     <section class="graph_container">
-
 
         <div class="graph">
             <div class="item1">
@@ -99,7 +96,7 @@
 
             <div class="forecast">
                 <p>ср</p>
-                <img src="img/assets_Today1/Cloudy.png" alt="облачно">
+                <img src="img/cloudy.png" alt="облачно">
                 </br>
                 <span>22° 13°</span>
             </div>
@@ -111,7 +108,7 @@
 
             <div class="forecast">
                 <p>чт</p>
-                <img src="img/assets_Today1/CloudRain.png" alt="небольшой дождь">
+                <img src="img/rain_light.png" alt="небольшой дождь">
                 </br>
                 <span>21° 11°</span>
             </div>
@@ -123,7 +120,7 @@
 
             <div class="forecast">
                 <p>пт</p>
-                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность">
+                <img src="img/partly_cloudy.png" alt="небольшая облачность">
                 </br>
                 <span>24° 12°</span>
             </div>
@@ -135,7 +132,7 @@
 
             <div class="forecast">
                 <p>сб</p>
-                <img src="img/assets_Today1/CloudRain.png" alt="дождь">
+                <img src="img/rain_s_cloudy.png" alt="дождь">
                 </br>
                 <span>26° 13°</span>
             </div>
@@ -147,7 +144,7 @@
 
             <div class="forecast">
                 <p>вс</p>
-                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность">
+                <img src="img/partly_cloudy.png" alt="небольшая облачность">
                 </br>
                 <span>27° 14°</span>
             </div>
@@ -159,7 +156,7 @@
 
             <div class="forecast">
                 <p>пн</p>
-                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность">
+                <img src="img/partly_cloudy.png" alt="небольшая облачность">
                 </br>
                 <span>28° 14°</span>
             </div>
@@ -171,7 +168,7 @@
 
             <div class="forecast">
                 <p>вт</p>
-                <img src="img/assets_Today1/CloudRain.png" alt="дождь">
+                <img src="img/rain_s_cloudy.png" alt="дождь">
                 </br>
                 <span>28° 14°</span>
             </div>
@@ -183,16 +180,14 @@
 
             <div class="forecast">
                 <p>ср</p>
-                <img src="img/assets_Today1/semicloud.png" alt="небольшая облачность">
+                <img src="img/partly_cloudy.png" alt="небольшая облачность">
                 </br>
                 <span>28° 14°</span>
             </div>
         </div>
 
-
-
     </section>
-
+    </main>
 
     <footer>
         <center> 2018 © Copyright</center>

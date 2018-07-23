@@ -1,12 +1,12 @@
 body {
-    font-family: Tahoma;
+    font-family: Tahoma, sans-serif;
     color: #000000;
     margin: 0;
 }
 
 header {
     background: #DCDCDC;
-    border: 1px solid #C0C0C0;
+    border-top: 1px solid #C0C0C0;
     width: 100%;
 }
 
@@ -14,14 +14,14 @@ a {
     cursor: pointer;
     border: 1px solid #C0C0C0;
 	display: inline-block;
-    cursor: pointer;
     margin-bottom: -1px;
     font-size: 14px;
     color: #000000;
+    text-align: center;
     background:#F5F5F5;
-    padding: 5px;
-    width: 120px;
+    padding: 5px 15px;
     margin: 5px;
+    margin-left: 15px;
     text-decoration: none; 
 }
 
@@ -29,45 +29,107 @@ a:hover {
     background: #A9A9A9;
 }
 
-form {
-    float: right;
-}
-
 .topblock {
     font-size: 12px;
+    padding: 1px 20px 1px 15px;
     background-color: #F5F5F5;
     border: 1px solid #C0C0C0;
-	float: left;
-    display: inline;
-    width: 100%
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    align-items: center;
 }
 
-.container {
-    width: 100%;
+.topblock__right {
+    width: 40%;
+    display: inline-flex;
+}
+
+.topblock__right input#search {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.topblock__right__searchbar input[type="search"] {
+    background: #e4e4e4;
+    opacity: 0.5;
+    outline: none;
+    border: 1px #bdbdbd solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    padding-left: 26px;
+    left: -1.8em;
+    position: relative;
+}
+
+.topblock__right__searchbar p {
+    color: #555555;
+  }
+
+.topblock__right__searchbar input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.topblock__right__searchbar input[type="search"]:-ms-input-placeholder {
+    color: #BCBCBC;
+}
+  
+.topblock__right__searchbar input[type="search"]::-ms-input-placeholder {
+    color: #BCBCBC;
+}
+  
+.topblock__right__searchbar input[type="search"]::placeholder {
+    color: #BCBCBC;
+}
+  
+.topblock__right__searchbar input[type="search"]:active, .topblock__right__searchbar input[type="search"]:focus {
+    background-color: #f7f7f7;
+}
+
+.index-page-wrapper {
+    min-height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    margin: auto;
+    display: block;
+}
+
+.general-information {
     display: inline-block;
     font-size: 22px;
     margin-left: 5%;
 }
 
-.box_1, .box_2 {
+.general-information__left, .general-information__right {
     white-space: nowrap;
     display: inline-block;
 }
 
-.box_1 div, .box_2 div {
+.general-information__left div, .general-information__right div {
     width: 500px;
     display: inline-block;
 }
 
+.general-information__right__buttons {
+    
+}
+
+p {
+    text-align: center;
+}
 
 #forecast_container {
-    margin-left: 5px;
-    
+    justify-content: space-around;
+    margin-left: 55px;
 }
 
 .forecast-column {
     float: left;
-    margin-right: 60px;
+    margin-right: 100px;
 }
 
 footer {
@@ -84,11 +146,13 @@ footer {
 }
 .graph {
     border-bottom:solid 1px #000000;
-    margin-left: 60px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 70px;
 }
 
 .graph_container {
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .item2 {
@@ -98,9 +162,8 @@ footer {
     width: 10px;
     margin-right: 160px;
     display: block;
-    float: left;
+    align-items: flex-end;
 }
-
 .item1 {
     height: 50px;
     width: 10px;
@@ -108,27 +171,26 @@ footer {
     background-color: rgb(134, 134, 134);
     justify-content: space-between;
     display: block;
-    float: left;
+    align-items: flex-end;
 }
-
 .item3 {
     background-color: rgb(134, 134, 134);
     justify-content: space-between;
     height: 20px;
     width: 10px;
     margin-right: 160px;
-    display: block;
-    float: left;
+    display:block;
+    align-items: flex-end;
 }
-
 .item4 {
+    
     margin-right: 160px;
     background-color: rgb(134, 134, 134);
     justify-content: space-between;
     height: 30px;
     width: 10px;
     display: block;
-    float: left;
+    align-items: flex-end;
 }
 
 .graph_numbers {
@@ -137,12 +199,9 @@ footer {
     justify-content: space-between;
 }
 
-.empty {
-    height: 110px;
-}
-
 table {
     width: 100%;
+    margin-top: 80px;
     text-align: center;
     height: 300px;
 }
@@ -155,237 +214,280 @@ td {
     background:#C0C0C0;
 }
 
-/*5days страница*/
-.weather_general {
-	width: 1200px;
-	height: 350px;
-    left: 100px;
-    margin-left: 150px;
-	top: 15px;
+/*======5days страница======*/
+
+.topblock-temperature {
+   margin-left: -600px;
 }
 
-.five_dates {
-	float: left;
-    width: 1200px;
-	top: 7px;
-    height: 40px;
-    margin-bottom: -9px;
+.fivedays__table {
+    min-height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    width: 1010px;
+    margin: auto;
+    display: block;
+    top: 25px;
+    padding: 0;
 }
 
-.date {
-	float: left;
-    width: 200px;
+.fivedays__table__row {
+	position: relative;
+    display: block;
+    width: 1010px;
+    height: 35px;
+    margin-left: 2px;
+}
+
+.fivedays__table__date {
+    position: relative;
+    display: inline-block;
     text-align: center;
-    height: 30px;
-	border: 1px solid;
-}
-
-.weathertable-weather{
-	float: left;
-	width: 1200px;
-	height: 91px;
-	top: -2px;
-}
-
-.daybox {
-	float: left;
+    height: 33px;
     width: 200px;
-    border-right: 1px solid;
-	height: 100px;
-	border-left: 1px solid;
-    border-top: 1px solid;
+    margin: -3px;
+    border: 1px solid #C0C0C0;
 }
 
-.imgs_weather{
-	float: left;
+.fivedays__table__dates {
+	position: relative;
+	display: inline-block;
+	width: 1010px;
+    top: -2px;
+}
+
+.fivedays__table__daybox {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 200px;
+    border-left: 1px solid #C0C0C0;
+    border-right: 1px solid #C0C0C0;
+    height: 85px;
+    margin: -5px;
+    margin-left: -1px;
+    margin-top: -14px;
+}
+
+.fivedays__table__image {
 	width: 24px;
     height: 50px;
     margin-left: 3px;
 	margin-right: 22px;
 }
-.daytime {
-    font-size: 13px;
-    float: left;
+
+.fivedays__table__daytime {
+    font-size: 14px;
+    display: inline-block;
+    justify-content: space-between;
     margin-right: 24px;
-    margin-left: 5px;
 }
 
-.weathertable-weather-temperature{
-	float: left;
-	width: 1200px;
-	height: 30px;
+.fivedays__table__degrees__green,
+.fivedays__table__degrees__yellow,
+.fivedays__table__degrees__orange {
+    font-size: 14px;
+    display: inline-block;
+    border: 1px solid #C0C0C0;
+    width: 35px;
+    text-align: center;
+    margin-left: 6px;
+    justify-content: space-around;
 }
-.weathertable-weather-temperature-box {
-	float: left;
+
+.fivedays__table__degrees__green {
+    background-color: #b9e88b;
+}
+.fivedays__table__degrees__yellow {
+    background-color: #f7e53b;
+}
+.fivedays__table__degrees__orange {
+    background-color: #f3a536;
+}
+
+.fivedays__table__temperature {
+    float: left;
+    width: 1010px;
+    height: 30px;
+    padding-bottom: 3px;
+    margin-left: -1px;
+    border-left: 1px solid #C0C0C0;
+}
+
+.fivedays__table__temperature__box {
+    position: relative;
+    float: left;
+    border-right: 1px solid #C0C0C0;
     width: 200px;
-	border-left: 1px solid;
-	border-right: 1px solid;
-	height: 30px;
-	top: -1px;
-}
-.wind {
-	
-	float: left;
-	width: 25px;
-	height: 15px;
-    border: 1px solid;
-    margin-top: 5px;
-    margin-left: 3px;
-    margin-right: 20px;
-}
-    
-.weathertable-middleline {
-    float: left;
-    background-color: silver;
-    width: 1008px;
-    height: 25px;
-    border: 1px solid;
-    top:-1px;
-    text-align: center;
+	height: 33px;
+    top: -1px;
 }
 
-.weathertable-middleline-row {
-    
-    float: left;
-    width: 1200px;
-    height: 25px;
-    top:5px;
+.max-wind-speed__row__box__speednumber {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+    height: 15px;
+    background: #DCDCDC;
     text-align: center;
-    margin-top: 5px;
+    font-size: 14px;
+    justify-content: space-between;
+    margin-left: 10px;
+    left: -4px;
+    margin-top: 10px;
+    transform: skewX(-35deg);
+}
+    
+.max-wind-speed {
+    position: relative;
+    display: block;
+    background-color: #DCDCDC;
+    border: 1px solid #C0C0C0;
+    width: 1004px;
+    height: 27px;
+    top: 32px;
+    margin-left: -1px;
+    text-align: center;
+    
+}
+
+.max-wind-speed__text {
+    position: relative;
+    top:-28px;
+}
+
+.max-wind-speed__row {
+    position: relative;
+    border-left: 1px solid #C0C0C0;
+    border-right: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    display: block;
+    width: 1004px;
+    height: 35px;
+    top:-24px;
+    text-align: center;
     left: -1px;
 }
 
-.weathertable-middleline-row-box {
-    
+.max-wind-speed__row__box {
+    position: relative;
+    border-right: 1px solid #C0C0C0;
+   /* margin-left: 1px;*/
     float: left;
-    width: 200px;
-    height: 30px;
-    border-left: 1px solid;
-    border-bottom: 1px solid;
-    border-right: 1px solid; 
+    width: 199px;
+    height: 35px;
 }
 
-.weathertable-middleline-row-box-value {
-    float: left;
-    width: 18px;
-    height: 15px;
-    background-color:  #DCDCDC;
-    border: 1px solid;
-    margin-right: 6px;
-    margin-top: 2px;	
-}
-
-.weathertable-middleline-2 {
-    float: left;
-    background-color: silver;
-    width: 1008px;
-    height: 25px;
-    border: 1px solid;
-    top: 27px;
-    margin-top: 28px;
+.rainfall-fallout {
+    position: relative;
+    display: block;
+    background-color: #DCDCDC;
+    border: 1px solid #C0C0C0;
+    bottom: -66px;
+    width: 1004px;
+    height: 27px;
+    margin-left: -1px;
     text-align: center;
 }
 
-.weathertable-rainfall {
-    margin-top: -8px;
-    float: left;
-    width: 1200px;
-    height: 61px;
-    top: 30px;	
+.rainfall-fallout__row {
+    position: relative;
+    display: block;
+    float:left;
+    width: 1010px;
+    height: 200px;
+    top: 20px;	
 }
 
-.rainfall_info {
-    float: left;
+.rainfall-fallout__row__box {
+    position: relative;
     width: 200px;
-    height: 60px;
-    top: 8px;
-    margin-top: 7px;
-    border-left: 1px solid;
-    border-bottom: 1px solid;
-    border-right: 1px solid;
+    height: 115px;
+    display: inline-flex;
+    justify-content: space-around;
+    top: 16px;
+    left: -1px;
+    margin-right: -6px;
+    border: 1px solid #C0C0C0;
 }
 
-.rainfall {
+.rainfall-fallout__row__item {
+    position: relative;
     float: left;
     width: 30px;
     height: 22px;
     top: 38px;
-    left: 1px;
     padding-left: 2px;
 }
-    
-.weathertable-water {
-    float: left;
-    width: 1200px;
-    height: 14px;
+
+.day-information { 
+    position: relative;
+    display: block;
+    top: -30px;
+    left: -1px;
+    width: 994px;
+    height: 40px;
+    padding-left: 10px;
+	line-height: 40px;
+    border: 1px solid #C0C0C0;
+    background-color: #F5F5F5;
 }
 
-.middle {
-    float: left;
-    width: 1008px;
-    height: 30px;
-    background-color: silver;
+.day-information-sun-moon {
+    margin-left: 250px;
+}
+
+.sun-moon-information {
+    width:1200px;
+	height: 260px;
     left: 45px;
-    margin-top: 50px;
-    margin-left: 150px;
 }
 
-.two_sections {
-	float: left;
-	width: 1200px;
-	height: 180px;
-    left: 45px;
-    margin-left: 150px;
+.sun-moon-information__left {
+	display: inline-block;
+    width: 540px;
+    height: 300px;
 }
 
-.left_side {
-	float: left;
-	width: 255px;
-	height: 180px;
+.sun-moon-information__right{
+	display: inline-block;
+    width: 497px;
+    height: 300px;
+    vertical-align: top;
 }
 
-.Left_side_image {
-	float: left;
-	width: 100px;
-	height: 105px;
+.sun-moon-information__left__info {
+    display: inline-block;
+	width: 220px;
+    height: 205px;
+    line-height: 30px;
 }
 
-.right_side {
-	float: right;
-	width: 300px;
-	height: 180px;
+.sun-moon-information__left__img {
+	display: inline-block;
+    height: 160px;
 }
 
-.right_side_image {
-	float: left;
-	width: 100px;
-	height: 105px;
+.sun-moon-information__right__img {
+	display: inline-block;
+    height: 160px;
 }
 
-.left_text {
-	float: left;
-	width: 155px;
-    height: 105px;
+.sun-moon-information__right__info {
+    display: inline-block;
+	width: 190px;
+    height: 205px;
+    line-height: 30px;
 }
 
-.right_text {
-	float: left;
-	width: 155px;
-	height: 105px;
+.sun-moon-information__right__sentence {
+    display: inline-block;
+	width: 500px;
+    height: 75px;
+    vertical-align: top;
 }
 
-.left_sentence {
-	float: left;
-	width: 400px;
-	height: 75px;
-}
-
-.right_sentence {
-	float: left;
-	width: 400px;
-	height: 75px;
-}
-
-.weathertable-temperature-box-value-smalltext{
-	font-size: 10px;
+.sun-moon-information__left__sentence {
+    display: inline-block;
+	width: 500px;
+    height: 75px;
 }

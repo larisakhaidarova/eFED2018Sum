@@ -3,35 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>История погоды</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Прогноз погоды на 5 дней</title>
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <a href="./index.html">
-                Сегодня
-            </a>
-            <a href="./5days.html">
-                5 дней
-            </a>
-            <a href="./history.html">История погоды
-            </a>
-        </nav>
-
+<header>
+    <nav>
+        <a href="./index.html">Сегодня</a>
+        <a href="./5days.html">5 дней</a>
+        <a href="./history.html">История погоды</a>
+    </nav>
 
         <div class="topblock">
             <div> Ижевск, Россия </div>
-            <form>
-                <input type="search" name="q" placeholder="Искать...">
-                <button type="submit">Поиск</button>
-            </form>
+            <div class="topblock__right">
+                <div class="topblock__right__searchbar">
+                    <i class="fa fa-search"></i>
+                    <input type="search" name="q" placeholder="Поиск"/>
+                </div>
+            </div>
         </div>
-    </header>
+</header>
 
-    <div class="empty"></div>
     <main>
         <table cellpadding="5">
             <tr>

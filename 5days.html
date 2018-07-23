@@ -4,357 +4,308 @@
 <head>
   <meta charset="UTF-8">
   <title>Прогноз погоды на 5 дней</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
     <nav>
-      <a href="./index.html">
-        Сегодня
-      </a>
-      <a href="./5days.html">
-        5 дней
-      </a>
-      <a href="./history.html">История погоды
-      </a>
+      <a href="./index.html">Сегодня</a>
+      <a href="./5days.html">5 дней</a>
+      <a href="./history.html">История погоды</a>
     </nav>
 
     <div class="topblock">
-      
-        <img src="img/assets_Today1/Cloudy_small.png" <p>34° Ижевск, Россия</p>
-    
-      <form>
-        <input type="search" name="q" placeholder="Искать...">
-        <button type="submit">Поиск</button>
-      </form>
+      <img src="img/Cloudy_small.png">
+      <p class="topblock-temperature">34° Ижевск, Россия</p>
+      <div class="topblock__right">
+        <div class="topblock__right__searchbar">
+          <i class="fa fa-search"></i>
+          <input type="search" name="q" placeholder="Поиск" />
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="weather_general">
-    <div class="five_dates">
-      <div class="date">
+  <main class="fivedays__table">
+    <div class="fivedays__table__row">
+      <div class="fivedays__table__date">
         <span>Пт, 18 мая</span>
       </div>
-      <div class="date">
+      <div class="fivedays__table__date">
         <span>Сб, 19 мая</span>
       </div>
-      <div class="date">
+      <div class="fivedays__table__date">
         <span>Вс, 20 мая</span>
       </div>
-      <div class="date">
+      <div class="fivedays__table__date">
         <span>Пн, 21 мая</span>
       </div>
-      <div class="date">
+      <div class="fivedays__table__date">
         <span>Вт, 22 мая</span>
       </div>
     </div>
 
-    <div class="weathertable-weather">
-      <div class="daybox">
-        <div class="imgs_weather">
+    <div class="fivedays__table__dates">
+      <div class="fivedays__table__daybox">
+        <div class="fivedays__table__image">
           <span class="daytime">Ночь</span>
-          <img src="img/assets_Today1/Cloudy_small.png" width="32" alt="облачно">
+          <img src="img/Cloudy_small.png" width="32" alt="облачно">
         </div>
-        <div class="imgs_weather">
+        <div class="fivedays__table__image">
           <span class="daytime">Утро</span>
-          <img src="img/assets_Today1/Sunny Weather_2.png" width="32" alt="ясно">
+          <img src="img/Sunny Weather_2.png" width="32" alt="ясно">
         </div>
-        <div class="imgs_weather">
+        <div class="fivedays__table__image">
           <span class="daytime">День</span>
-          <img src="img/assets_Today1/Weather.png" width="32" alt="гроза, дождь">
+          <img src="img/Weather.png" width="32" alt="гроза, дождь">
         </div>
-        <div class="imgs_weather">
+        <div class="fivedays__table__image">
           <span class="daytime">Вечер</span>
-          <img src="img/assets_Today1/Weather_4.png" width="32" alt="дождь">
+          <img src="img/Weather_4.png" width="32" alt="дождь">
         </div>
       </div>
 
-      <div class="daybox">
-        <div class="imgs_weather">
+      <div class="fivedays__table__daybox">
+        <div class="fivedays__table__image">
           <span class="daytime">Ночь</span>
-          <img src="img/assets_Today1/Cloudy_small.png" width="32" alt="облачно">
+          <img src="img/Cloudy_small.png" width="32" alt="облачно">
         </div>
-        <div class="imgs_weather">
+        <div class="fivedays__table__image">
           <span class="daytime">Утро</span>
-          <img src="img/assets_Today1/Sunny Weather_2.png" width="32" alt="ясно">
+          <img src="img/Sunny Weather_2.png" width="32" alt="ясно">
         </div>
-        <div class="imgs_weather">
+        <div class="fivedays__table__image">
           <span class="daytime">День</span>
-          <img src="img/assets_Today1/Weather_4.png" width="32" alt="дождь">
+          <img src="img/Weather_4.png" width="32" alt="дождь">
         </div>
-        <div class="imgs_weather">
+        <div class="fivedays__table__image">
           <span class="daytime">Вечер</span>
-          <img src="img/assets_Today1/Weather.png" width="32" alt="гроза, дождь">
+          <img src="img/Weather.png" width="32" alt="гроза, дождь">
         </div>
       </div>
 
-      <div class="daybox">
-        <div class="imgs_weather">
+      <div class="fivedays__table__daybox">
+        <div class="fivedays__table__image">
           <span class="daytime">Ночь</span>
-          <img src="img/assets_Today1/Cloudy_small.png" width="32" alt="облачно">
+          <img src="img/Cloudy_small.png" width="32" alt="облачно">
         </div>
-        <div class="imgs_weather">
+        <div class="fivedays__table__image">
           <span class="daytime">Утро</span>
-          <img src="img/assets_Today1/Weather_4.png" width="32" alt="дождь">
+          <img src="img/Weather_4.png" width="32" alt="дождь">
         </div>
-        <div class="imgs_weather">
+        <div class="fivedays__table__image">
           <span class="daytime">День</span>
-          <img src="img/assets_Today1/Weather.png" width="32" alt="гроза, дождь">
+          <img src="img/Weather.png" width="32" alt="гроза, дождь">
         </div>
-        <div class="imgs_weather">
+        <div class="fivedays__table__image">
           <span class="daytime">Вечер</span>
-          <img src="img/assets_Today1/Sunny Weather_2.png" width="32" alt="ясно">
+          <img src="img/Sunny Weather_2.png" width="32" alt="ясно">
         </div>
       </div>
 
-      <div class="daybox">
-        <div class="imgs_weather">
-          <span class="daytime">Ночь</span>
-          <img src="img/assets_Today1/Cloudy_small.png" width="32" alt="облачно">
+      <div class="fivedays__table__daybox">
+        <div class="fivedays__table__image">
+          <span class="fivedays__table__daytime">Ночь</span>
+          <img src="img/Cloudy_small.png" width="32" alt="облачно">
         </div>
-        <div class="imgs_weather">
-          <span class="daytime">Утро</span>
-          <img src="img/assets_Today1/Sunny Weather_2.png" width="32" alt="ясно">
+        <div class="fivedays__table__image">
+          <span class="fivedays__table__daytime">Утро</span>
+          <img src="img/Sunny Weather_2.png" width="32" alt="ясно">
         </div>
-        <div class="imgs_weather">
-          <span class="daytime">День</span>
-          <img src="img/assets_Today1/Weather.png" width="32" alt="гроза, дождь">
+        <div class="fivedays__table__image">
+          <span class="fivedays__table__daytime">День</span>
+          <img src="img/Weather.png" width="32" alt="гроза, дождь">
         </div>
-        <div class="imgs_weather">
-          <span class="daytime">Вечер</span>
-          <img src="img/assets_Today1/Weather_4.png" width="32" alt="дождь">
-        </div>
-      </div>
-
-      <div class="daybox">
-        <div class="imgs_weather">
-          <span class="daytime">Ночь</span>
-          <img src="img/assets_Today1/Cloudy_small.png" width="32" alt="облачно">
-        </div>
-        <div class="imgs_weather">
-          <span class="daytime">Утро</span>
-          <img src="img/assets_Today1/Sunny Weather_2.png" width="32" alt="ясно">
-        </div>
-        <div class="imgs_weather">
-          <span class="daytime">День</span>
-          <img src="img/assets_Today1/Weather.png" width="32" alt="гроза, дождь">
-        </div>
-        <div class="imgs_weather">
-          <span class="daytime">Вечер</span>
-          <img src="img/assets_Today1/Weather_4.png" width="32" alt="дождь">
+        <div class="fivedays__table__image">
+          <span class="fivedays__table__daytime">Вечер</span>
+          <img src="img/Weather_4.png" width="32" alt="дождь">
         </div>
       </div>
 
-      <div class="weathertable-weather-temperature">
-        <div class="weathertable-weather-temperature-box">
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+8</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+16</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+21</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+17</span>
-          </div>
+      <div class="fivedays__table__daybox">
+        <div class="fivedays__table__image">
+          <span class="fivedays__table__daytime">Ночь</span>
+          <img src="img/Cloudy_small.png" width="32" alt="облачно">
         </div>
-        <div class="weathertable-weather-temperature-box">
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+8</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+16</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+21</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+17</span>
-          </div>
+        <div class="fivedays__table__image">
+          <span class="fivedays__table__daytime">Утро</span>
+          <img src="img/Sunny Weather_2.png" width="32" alt="ясно">
         </div>
-        <div class="weathertable-weather-temperature-box">
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+8</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+16</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+21</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+17</span>
-          </div>
+        <div class="fivedays__table__image">
+          <span class="fivedays__table__daytime">День</span>
+          <img src="img/Weather.png" width="32" alt="гроза, дождь">
         </div>
-        <div class="weathertable-weather-temperature-box">
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+8</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+16</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+21</span>
-          </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+17</span>
-          </div>
+        <div class="fivedays__table__image">
+          <span class="fivedays__table__daytime">Вечер</span>
+          <img src="img/Weather_4.png" width="32" alt="дождь">
         </div>
-        <div class="weathertable-weather-temperature-box">
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+8</span>
+      </div>
+
+      <div class="fivedays__table__temperature">
+        <div class="fivedays__table__temperature__box">
+          <div class="fivedays__table__degrees__green">+8</div>
+          <div class="fivedays__table__degrees__yellow">+16</div>
+          <div class="fivedays__table__degrees__orange">+21</div>
+          <div class="fivedays__table__degrees__yellow">+17</div>
+        </div>
+        <div class="fivedays__table__temperature__box">
+          <div class="fivedays__table__degrees__green">+8</div>
+          <div class="fivedays__table__degrees__yellow">+16</div>
+          <div class="fivedays__table__degrees__orange">+21</div>
+          <div class="fivedays__table__degrees__yellow">+17</div>
+        </div>
+        <div class="fivedays__table__temperature__box">
+          <div class="fivedays__table__degrees__green">+8</div>
+          <div class="fivedays__table__degrees__yellow">+16</div>
+          <div class="fivedays__table__degrees__orange">+21</div>
+          <div class="fivedays__table__degrees__yellow">+17</div>
+        </div>
+        <div class="fivedays__table__temperature__box">
+          <div class="fivedays__table__degrees__green">+8</div>
+          <div class="fivedays__table__degrees__yellow">+16</div>
+          <div class="fivedays__table__degrees__orange">+21</div>
+          <div class="fivedays__table__degrees__yellow">+17</div>
+        </div>
+        <div class="fivedays__table__temperature__box">
+          <div class="fivedays__table__degrees__green">+8</div>
+          <div class="fivedays__table__degrees__yellow">+16</div>
+          <div class="fivedays__table__degrees__orange">+21</div>
+          <div class="fivedays__table__degrees__yellow">+17</div>
+        </div>
+      </div>
+
+
+      <div class="max-wind-speed">
+        <span class="max-wind-speed__text">Максимальная скорость ветра, м/с</span>
+        <div class="max-wind-speed__row">
+          <div class="max-wind-speed__row__box">
+            <div class="max-wind-speed__row__box__speednumber">2</div>
+            <div class="max-wind-speed__row__box__speednumber">5</div>
+            <div class="max-wind-speed__row__box__speednumber">4</div>
+            <div class="max-wind-speed__row__box__speednumber">6</div>
           </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+16</span>
+          <div class="max-wind-speed__row__box">
+            <div class="max-wind-speed__row__box__speednumber">2</div>
+            <div class="max-wind-speed__row__box__speednumber">5</div>
+            <div class="max-wind-speed__row__box__speednumber">4</div>
+            <div class="max-wind-speed__row__box__speednumber">6</div>
           </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+21</span>
+          <div class="max-wind-speed__row__box">
+            <div class="max-wind-speed__row__box__speednumber">2</div>
+            <div class="max-wind-speed__row__box__speednumber">5</div>
+            <div class="max-wind-speed__row__box__speednumber">4</div>
+            <div class="max-wind-speed__row__box__speednumber">6</div>
           </div>
-          <div class="weathertable-temperature-box-value">
-            <span class="daytime">+17</span>
+          <div class="max-wind-speed__row__box">
+            <div class="max-wind-speed__row__box__speednumber">2</div>
+            <div class="max-wind-speed__row__box__speednumber">5</div>
+            <div class="max-wind-speed__row__box__speednumber">4</div>
+            <div class="max-wind-speed__row__box__speednumber">6</div>
+          </div>
+          <div class="max-wind-speed__row__box">
+            <div class="max-wind-speed__row__box__speednumber">2</div>
+            <div class="max-wind-speed__row__box__speednumber">5</div>
+            <div class="max-wind-speed__row__box__speednumber">4</div>
+            <div class="max-wind-speed__row__box__speednumber">6</div>
           </div>
         </div>
       </div>
-      <div class="weathertable-middleline">
-        <span>Максимальная скорость ветра, м/с</span>
-        <div class="weathertable-middleline-row">
-          <div class="weathertable-middleline-row-box">
-            <div class="wind">2</div>
-            <div class="wind">5</div>
-            <div class="wind">4</div>
-            <div class="wind">6</div>
-          </div>
-          <div class="weathertable-middleline-row-box">
-            <div class="wind">2</div>
-            <div class="wind">5</div>
-            <div class="wind">4</div>
-            <div class="wind">6</div>
-          </div>
-          <div class="weathertable-middleline-row-box">
-            <div class="wind">2</div>
-            <div class="wind">5</div>
-            <div class="wind">4</div>
-            <div class="wind">6</div>
-          </div>
-          <div class="weathertable-middleline-row-box">
-            <div class="wind">2</div>
-            <div class="wind">5</div>
-            <div class="wind">4</div>
-            <div class="wind">6</div>
-          </div>
-          <div class="weathertable-middleline-row-box">
-            <div class="wind">2</div>
-            <div class="wind">5</div>
-            <div class="wind">4</div>
-            <div class="wind">6</div>
-          </div>
-        </div>
-      </div>
-      <div class="weathertable-middleline-2">
+      <div class="rainfall-fallout">
         <span>Осадки, мм</span>
       </div>
-      <div class="weathertable-rainfall">
-        <div class="rainfall_info">
-          <div class="rainfall">
-            <img src="" width="30">
+      <div class="rainfall-fallout__row">
+        <div class="rainfall-fallout__row__box">
+          <div class="rainfall-fallout__row__item">0</div>
+          <div class="rainfall-fallout__row__item">0</div>
+          <div class="rainfall-fallout__row__item">
+            <img src="img/small_wave.png" width="30">2.2
           </div>
-          <div class="rainfall">
-            <img src="" width="30">
-          </div>
-          <div class="rainfall">
-            <img src="" width="30">
-          </div>
-        </div>
-        <div class="rainfall_info">
-          <div class="rainfall">
-            <img src="" width="30">
-          </div>
-          <div class="rainfall">
-            <img src="" width="30">
-          </div>
-          <div class="rainfall">
-            <img src="" width="30">
+          <div class="rainfall-fallout__row__item">
+            <img src="img/Big_Wave.png" width="30">4.6
           </div>
         </div>
-        <div class="rainfall_info">
-          <div class="rainfall">
-            <img src="" width="30">
+        <div class="rainfall-fallout__row__box">
+          <div class="rainfall-fallout__row__item">0</div>
+          <div class="rainfall-fallout__row__item">0</div>
+          <div class="rainfall-fallout__row__item">
+            <img src="img/Big_Wave.png" width="30">4.5
           </div>
-          <div class="rainfall">
-            <img src="" width="30">
-          </div>
-          <div class="rainfall">
-            <img src="" width="30">
-          </div>
-        </div>
-        <div class="rainfall_info">
-          <div class="rainfall">
-            <img src="" width="30">
-          </div>
-          <div class="rainfall">
-            <img src="" width="30">
-          </div>
-          <div class="rainfall">
-            <img src="" width="30">
+          <div class="rainfall-fallout__row__item">
+            <img src="img/small_wave.png" width="30">2.2
           </div>
         </div>
-        <div class="rainfall_info">
-          <div class="rainfall">
-            <img src="" width="30">
+        <div class="rainfall-fallout__row__box">
+          <div class="rainfall-fallout__row__item">0</div>
+          <div class="rainfall-fallout__row__item">
+            <img src="img/Big_Wave.png" width="30">4.7</div>
+          <div class="rainfall-fallout__row__item">
+            <img src="img/small_wave.png" width="30">2.2
           </div>
-          <div class="rainfall">
-            <img src="" width="30">
+          <div class="rainfall-fallout__row__item">0</div>
+        </div>
+        <div class="rainfall-fallout__row__box">
+          <div class="rainfall-fallout__row__item">0</div>
+          <div class="rainfall-fallout__row__item">0</div>
+          <div class="rainfall-fallout__row__item">
+            <img src="img/small_wave.png" width="30">2.2
           </div>
-          <div class="rainfall">
-            <img src="" width="30">
+          <div class="rainfall-fallout__row__item">
+            <img src="img/Big_Wave.png" width="30">4.6
+          </div>
+        </div>
+        <div class="rainfall-fallout__row__box">
+          <div class="rainfall-fallout__row__item">0</div>
+          <div class="rainfall-fallout__row__item">0</div>
+          <div class="rainfall-fallout__row__item">
+            <img src="img/small_wave.png" width="30">2.2
+          </div>
+          <div class="rainfall-fallout__row__item">
+            <img src="img/Big_Wave.png" width="30">4.6
           </div>
         </div>
       </div>
     </div>
+    </div>
+
+    <section class="day-information">Пятница, 18 мая, сегодня
+      <span class="day-information-sun-moon">Солнце и луна</span>
+    </section>
+    <section class="sun-moon-information">
+      <div class="sun-moon-information__left">
+        <div class="sun-moon-information__left__img">
+          <img src="img/Sun@2x.png" width="140" alt="солнечно">
+        </div>
+        <div class="sun-moon-information__left__info">Долгота дня - 16 ч 43 мин
+          <br/>
+          <br/>Восход - 4:02
+          <br/>
+          <br/>Заход - 20:45
+        </div>
+        <div class="sun-moon-information__left__sentence">
+          <span>Сегодня день на 2 минуты длиннее, чем вчера</span>
+        </div>
+      </div>
+      <div class="sun-moon-information__right">
+          <div class="sun-moon-information__right__img">
+            <img src="img/Moon@2x.png" width="140" alt="луна растущая">
+          </div>
+          <div class="sun-moon-information__right__info">Луна растущая - 19%
+            <br/>
+            <br/>Восход - 7:40
+            <br/>
+            <br/>Заход - 10:58
+          </div>
+          <div class="sun-moon-information__right__sentence">
+            <span>Полнолуние - 28 июня, через 23 дня</span>
+          </div>
+        </div>
+    </section>
   </main>
-
-  <div class="middle">Пятница, 18 мая, сегодня
-    <span class="textspace">Солнце и луна</span>
-  </div>
-  <div class="two_sections">
-    <div class="left_side">
-      <div class="left_side_img">
-        <img src="img/assets_Today1/Sun@2x.png" width="100" alt="солнечно">
-      </div>
-      <div class="left_text">Долгота дня -- 16 ч 43 мин
-        <br/>
-        <br/>Восход - 4:02
-        <br/>
-        <br/>Заход - 20:45
-      </div>
-      <div class="left_sentence">
-        <span>Сегодня день на 2 минуты длиннее, чем вчера</span>
-      </div>
-    </div>
-
-    <div class="right_side">
-      <div class="right_side_img">
-        <img src="img/assets_Today1/Moon@2x.png" width="100" alt="луна растущая">
-      </div>
-      <div class="right_text">Луна растущая - 19%
-        <br/>
-        <br/>Восход - 7:40
-        <br/>
-        <br/>Заход - 10:58
-      </div>
-      <div class="right_sentence">
-        <span>Полнолуние -- 28 июня, через 23 дня</span>
-      </div>
-    </div>
-  </div>
-
-
   <footer>
-    <center> 2018 © Copyright</center>
+    <center> 2018 &copy Copyright</center>
   </footer>
 
 </body>
