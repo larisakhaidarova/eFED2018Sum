@@ -4,71 +4,17 @@
     margin: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .index-page-wrapper {
-        width: 768px;
-    }
-	.body {
-		font-size: 0.8em;
-		line-height: 27px;
-	}
-	.header {
-		height: 400px;
-	}
-    .index-page-wrapper {
-        width: 768px;
-    }
-	nav a {
-		margin: 5px 3px 0 0;
-	}
-	nav a {
-		margin-left: 1px;
-	}
-	.main-info {
-		width: 83%;
-	}
-	span {
-		margin: 10px 0 0;
-	}
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .index-page-wrapper {
-        width: 480px;
-    }
-	.body {
-		font-size: 0.8em;
-		line-height: 25px;
-	}
-	.header {
-		font-weight: bold;
-		height: 280px;
-	}
-	.header p {
-		font-weight: normal;
-	}
-	nav a {
-		font-size: 0.75em;
-		margin: 5px 3px 0 0;
-	}
-	.second-header {
-		top: 100px;
-		right: 30px;
-	}
-	.main-info {
-		width: 92%;
-	}
-	span {
-		margin: 0;
-		padding: 15px 0 10px 50px;
-	}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 
 .header {
     background: #DCDCDC;
     border-top: 1px solid #C0C0C0;
     height: 80px;
-    width: 100%;
+   /* width: 100%;*/
 }
 
 .header__page-navigation__button {
@@ -92,7 +38,8 @@
 
 .second-header {
     font-size: 12px;
-    width: 1329px;
+  /*  width: 1329px;*/
+    min-width: 1329px;
     overflow: hidden;
     padding: 1px 20px 1px 15px;
     background-color: #F5F5F5;
@@ -163,10 +110,9 @@
 }
 
 .main-info {
-    display: inline-block;
+   display: inline-block;
     margin-left: 5%;
 }
-
 .main-info__city-and-weather, .main-info__sun-and-navigation {
     white-space: nowrap;
     display: inline-block;
@@ -559,4 +505,40 @@
     display: inline-block;
 	width: 500px;
     height: 75px;
+}
+
+@media screen and (max-width: 768px) {
+    .second-header__searchbar {
+        display: flex;
+        justify-content: center;
+    }
+    #detailed-forecast {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .detailed-forecast__column {
+        display: flex;
+        flex-direction: row;
+        border: #A9A9A9 1px solid;
+        justify-content: center;
+        margin: 5px 5px 5px 5px;
+        width: 300px;
+    }
+    .main-info {
+        margin-left: 5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .main-info__city-and-weather
+    .main-info__sun-and-navigation {
+        display: flex;
+        justify-content: center;
+    }
+    .table {
+		overflow-x: auto;
+		display: flex;
+	}
 }
