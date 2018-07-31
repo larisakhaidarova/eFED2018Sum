@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Прогноз погоды</title>
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="header__page-navigation">
+            <a class="navigation-button" href="./index.html">Сегодня</a>
+            <a class="navigation-button" href="./5days.html">5 дней</a>
+            <a class="navigation-button" href="./history.html">История погоды</a>
+        </nav>
+
+        <div class="second-header">
+            <p>Загрязнение воздуха 8.168363052618588е-8</p>
+            <div class="second-header__searchbar">
+                <div class="second-header__searchbar__form">
+                    <i class="fa fa-search"></i>
+                    <input type="search" name="q" placeholder="Поиск" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="index-page-wrapper">
+
+        <div class="main-info">
+            <div class="main-info__city-and-weather">
+                <div>
+                    <p>Ижевск, Россия
+                        <br/>среда
+                        <br/>облачно
+                    </p>
+                    <img src="img/Sunny_Weather.png" alt="облачно">
+                    <span class="main-info__sun-and-navigation__degree">22℃</span>
+                </div>
+
+            </div>
+
+            <div class="main-info__sun-and-navigation">
+                <p>Вероятность осадков: 20%
+                    <br/> Влажность: 45%
+                    <br/> Ветер: 11 км/ч
+                </p>
+                <div class="main-info__sun-and-navigation__navigation">
+                    <a class="navigation-button" href="./index.html">Температура</a>
+                    <a class="navigation-button" href="./precipitation.html">Вероятность осадков</a>
+                    <a class="navigation-button" href="./wind.html">Ветер</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

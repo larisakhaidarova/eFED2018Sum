@@ -1,27 +1,34 @@
+html {
+    width: 100%;
+}
+
 .body {
     font-family: Tahoma, sans-serif;
     color: #000000;
     margin: 0;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
+* {
+    box-sizing: border-box;
 }
 
 .header {
     background: #DCDCDC;
     border-top: 1px solid #C0C0C0;
     height: 80px;
-   /* width: 100%;*/
+    width: 100%;
+}
+
+.header__page-navigation {
+    display: flex;
+    width: 100%;
 }
 
 .header__page-navigation__button {
     cursor: pointer;
     border: 1px solid #C0C0C0;
 	display: inline-flex;
-    margin-bottom: -1px;
+    /* margin-bottom: -1px; */
     font-size: 14px;
     color: #000000;
     text-align: center;
@@ -38,13 +45,12 @@
 
 .second-header {
     font-size: 12px;
-  /*  width: 1329px;*/
-    min-width: 1329px;
+    width: 100%;
     overflow: hidden;
-    padding: 1px 20px 1px 15px;
+    padding: 0 16px;
     background-color: #F5F5F5;
     border: 1px solid #C0C0C0;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     height: 40px;
     align-items: center;
@@ -103,49 +109,49 @@
     min-height: 100%;
     position: relative;
     box-sizing: border-box;
-    width: 1010px;
     margin: auto;
     display: block;
     top: 25px;
 }
 
 .main-info {
-   display: inline-block;
-    margin-left: 5%;
-}
-.main-info__city-and-weather, .main-info__sun-and-navigation {
-    white-space: nowrap;
-    display: inline-block;
-}
-
-.main-info__city-and-weather div, .main-info__sun-and-navigation div {
-    width: 500px;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 24px;
 }
 
 .main-info__sun-and-navigation__degree {
     font-size: 36px;
     margin-left: 20px;
+    display: inline-flex;
+}
+
+.main-info__sun-and-navigation {
+    font-size: 24px;
+    display: block; 
 }
 
 .main-info__city-and-weather {
    text-align: left;
    font-size: 24px;
-
+   display: inline-flex;
 }
 
-
-/*p {
-    text-align: center;
-}*/
+.main-info__weather-details {
+    
+   display: inline-flex;
+   flex-wrap: wrap;
+   justify-content: space-between; 
+}
 
 #detailed-forecast {
+    display: flex;
     justify-content: space-around;
     margin-left: 55px;
 }
 
 .detailed-forecast__column {
-    float: left;
     margin-right: 62px;
     text-align: center;
 }
@@ -217,12 +223,17 @@
     display: block;
    /* align-items: flex-end;*/
 }
+/*==========history страница=========*/
 
 .weather-history {
     width: 100%;
     margin-top: 80px;
+    table-layout: fixed;
     text-align: center;
     height: 300px;
+    border-spacing: 0;
+    font-size: 12px;
+
 }
 
 .weather-history__gray {
@@ -230,10 +241,6 @@
 }
 
 /*======5days страница======*/
-
-.second-header__temperature {
-   margin-left: -600px;
-}
 
 .fivedays-table {
     min-height: 100%;
@@ -247,15 +254,11 @@
 }
 
 .fivedays-table__row {
-	position: relative;
     display: block;
-    width: 1010px;
-    height: 35px;
     margin-left: 2px;
 }
 
 .fivedays-table__row__date {
-    position: relative;
     display: inline-block;
     text-align: center;
     height: 33px;
@@ -265,10 +268,10 @@
 }
 
 .fivedays-table__weekdays {
-	position: relative;
+/*	position: relative;
 	display: inline-block;
 	width: 1010px;
-    top: -2px;
+    top: -2px;*/
 }
 
 .fivedays-table__weekdays__everyday {
@@ -280,7 +283,6 @@
     height: 85px;
     margin: -5px;
     margin-left: -1px;
-    margin-top: -14px;
 }
 
 .fivedays-table__weekdays__everyday__image {
@@ -332,9 +334,8 @@
     position: relative;
     float: left;
     border-right: 1px solid #C0C0C0;
-    width: 200px;
+    width: 199px;
 	height: 33px;
-    top: -1px;
 }
 
 .max-wind-speed__row__speednumber__value {
@@ -357,7 +358,7 @@
     display: block;
     background-color: #DCDCDC;
     border: 1px solid #C0C0C0;
-    width: 1004px;
+    width: 996px;
     height: 27px;
     top: 32px;
     margin-left: -1px;
@@ -373,10 +374,9 @@
 .max-wind-speed__row {
     position: relative;
     border-left: 1px solid #C0C0C0;
-    border-right: 1px solid #C0C0C0;
     border-bottom: 1px solid #C0C0C0;
     display: block;
-    width: 1004px;
+    width: 997px;
     height: 35px;
     top:-24px;
     text-align: center;
@@ -386,19 +386,18 @@
 .max-wind-speed__row__speednumber {
     position: relative;
     border-right: 1px solid #C0C0C0;
-   /* margin-left: 1px;*/
     float: left;
     width: 199px;
     height: 35px;
 }
 
 .rainfall {
-    position: relative;
+   position: relative;
     display: block;
     background-color: #DCDCDC;
     border: 1px solid #C0C0C0;
-    bottom: -66px;
-    width: 1004px;
+    bottom: -64px;
+    width: 996px;
     height: 27px;
     margin-left: -1px;
     text-align: center;
@@ -409,8 +408,7 @@
     display: block;
     float:left;
     width: 1010px;
-    height: 200px;
-    top: 20px;	
+    top: 17px;	
 }
 
 .rainfall__row__everyday {
@@ -434,17 +432,14 @@
     padding-left: 2px;
 }
 
-.day-information { 
-    position: relative;
-    display: block;
-    top: -30px;
-    left: -1px;
-    width: 994px;
-    height: 40px;
-    padding-left: 10px;
-	line-height: 40px;
+.day-information {
+    margin: auto;
     border: 1px solid #C0C0C0;
-    background-color: #F5F5F5;
+    background-color: #DCDCDC;
+    height: 35px;
+    padding: 5px;
+    margin-right: 15px;
+    margin-top: 190px;
 }
 
 .day-information__sun-moon-title {
@@ -507,38 +502,29 @@
     height: 75px;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    .header__page-navigation{
+        flex-wrap: wrap;
+    }
     .second-header__searchbar {
-        display: flex;
-        justify-content: center;
+       flex-wrap: wrap;
+    }
+    .main-info__sun-and-navigation,
+    .main-info__city-and-weather {
+        font-size: 18px;
     }
     #detailed-forecast {
         display: flex;
-        flex-direction: column;
+        flex-flow: column;
         justify-content: center;
-        height: 100%;
+        margin-left: 0;
     }
     .detailed-forecast__column {
-        display: flex;
-        flex-direction: row;
-        border: #A9A9A9 1px solid;
-        justify-content: center;
-        margin: 5px 5px 5px 5px;
-        width: 300px;
+        flex-direction: column;
+        border-bottom: #A9A9A9 1px solid;
+        margin: -15px 5px 18px 5px;
+        width: 100%;
     }
-    .main-info {
-        margin-left: 5vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-    .main-info__city-and-weather
-    .main-info__sun-and-navigation {
-        display: flex;
-        justify-content: center;
-    }
-    .table {
+    table {
 		overflow-x: auto;
-		display: flex;
 	}
-}
