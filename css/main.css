@@ -24,7 +24,7 @@ html {
     width: 100%;
 }
 
-.header__page-navigation__button {
+.navigation-button {
     cursor: pointer;
     border: 1px solid #C0C0C0;
 	display: inline-flex;
@@ -39,7 +39,7 @@ html {
     text-decoration: none; 
 }
 
-.header__page-navigation__button:hover {
+.navigation-button:hover {
     background: #A9A9A9;
 }
 
@@ -139,7 +139,6 @@ html {
 }
 
 .main-info__weather-details {
-    
    display: inline-flex;
    flex-wrap: wrap;
    justify-content: space-between; 
@@ -223,23 +222,58 @@ html {
     display: block;
    /* align-items: flex-end;*/
 }
+
+/*======precipitation page=========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*==========history страница=========*/
 
-.weather-history {
-    width: 100%;
-    margin-top: 80px;
-    table-layout: fixed;
-    text-align: center;
-    height: 300px;
-    border-spacing: 0;
-    font-size: 12px;
-
+.history-review {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 50px;
 }
 
-.weather-history__gray {
-    background:#C0C0C0;
+.cell {
+	display: flex;
+	min-width: 10px;
+	min-height: 40px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 }
 
+.first-row {
+	display: flex;
+}
+
+.first-row .cell:nth-child(even) {
+	background-color: #F0F0F0;
+}
+
+.second-row {
+	display: flex;
+}
+
+.second-row .cell:nth-child(odd) {
+	display: flex;
+	background-color:#F0F0F0;
+}
 /*======5days страница======*/
 
 .fivedays-table {
@@ -503,7 +537,7 @@ html {
 }
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
-    .header__page-navigation{
+    .header__page-navigation {
         flex-wrap: wrap;
     }
     .second-header__searchbar {
@@ -525,6 +559,7 @@ html {
         margin: -15px 5px 18px 5px;
         width: 100%;
     }
-    table {
-		overflow-x: auto;
-	}
+    .history-review {
+        font-size: 10px;
+    }
+}
