@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Прогноз погоды</title>
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -18,10 +19,12 @@
 
         <div class="second-header">
             <p>Загрязнение воздуха 8.168363052618588е-8</p>
-                <form class="second-header__searchbar-form">
+            <form class="second-header__searchbar-form">
                     <input id="search" placeholder="Поиск"/> </form>
         </div>
     </header>
+
+    <main class="index-page-wrapper">
 
         <div class="main-info">
             <div class="main-info__city-and-weather">
@@ -49,60 +52,102 @@
             </div>
         </div>
 
-    <section class="temperature-graph">
-            <div class="temperature-graph-time">
-              <div class="temperature-graph-numbers">
-                <div class="temperature-frame">
-                  <div class="temperature-frame__14-degrees"></div>
-                  <div>14</div>
+        <section class="rainfall-expectancy">
+            <div class="rainfall-percentage-and-time">
+              <div class="rainfall-percentage">
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-44"></div>
                 </div>
-      
-                <div class="temperature-frame">
-                  <div class="temperature-frame__14-degrees"></div>
-                  <div>14</div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-23"></div>
+                  <div>24%</div>
                 </div>
-      
-                <div class="temperature-frame">
-                  <div class="temperature-frame__14-degrees"></div>
-                  <div>14</div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-15"></div>
                 </div>
-      
-                <div class="temperature-frame">
-                  <div class="temperature-frame__12-degrees"></div>
-                  <div>12</div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-23"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-30"></div>
+                  <div>30%</div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-38"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-37"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-23"></div>
+                  <div>24%</div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-15"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-11">
+                  </div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-11"></div>
+                  <div>8%</div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-15"></div>
                 </div>
               </div>
-
               <div class="time-row">
-                    <div class="time-of-day">17:00</div>
-                    <div class="time-of-day">20:00</div>
-                    <div class="time-of-day">23:00</div>
-                    <div class="time-of-day">2:00</div>
-                </div>
+                <div class="time-of-day">17:00</div>
+                <div class="time-of-day">20:00</div>
+                <div class="time-of-day">23:00</div>
+                <div class="time-of-day">2:00</div>
+              </div>
             </div>
-            <div class="temperature-graph-time">
-              <div class="temperature-graph-numbers">
-      
-                <div class="temperature-frame">
-                  <div class="temperature-frame__11-degrees"></div>
-                  <div>11</div>
+            <div class="rainfall-percentage-and-time">
+              <div class="rainfall-percentage">
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-10"></div>
                 </div>
-      
-                <div class="temperature-frame">
-                  <div class="temperature-frame__13-degrees"></div>
-                  <div>13</div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-9"></div>
+                  <div>4%</div>
                 </div>
-      
-                <div class="temperature-frame">
-                  <div class="temperature-frame__14-degrees"></div>
-                  <div>14</div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-8"></div>
                 </div>
-      
-                <div class="temperature-frame">
-                  <div class="temperature-frame__14-degrees"></div>
-                  <div>14</div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-6">
+                  </div>
                 </div>
-      
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-10"></div>
+                  <div>6%</div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-6"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-0"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-0"></div>
+                  <div>0%</div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-6"></div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-6">
+                  </div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-6"></div>
+                  <div>1%</div>
+                </div>
+                <div class="rainfall-percentage__rainfall-level">
+                  <div class="rainfall-level-10"></div>
+                </div>
               </div>
               <div class="time-row">
                 <div class="time-of-day">5:00</div>
@@ -111,9 +156,9 @@
                 <div class="time-of-day">14:00</div>
               </div>
             </div>
-    </section>
+          </section>
 
-        <section>
+    <section>
         </div>
         <div class="week-temperature">
             <div class="week-temperature__everyday">
@@ -175,10 +220,9 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <center> 2018 &copy Copyright</center>
-    </footer>
-
+          <footer class="footer">
+            <center> 2018 &copy Copyright</center>
+        </footer>         
 </body>
 
 </html>

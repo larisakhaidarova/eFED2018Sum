@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Прогноз погоды на 5 дней</title>
   <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -12,297 +13,302 @@
 
   <header class="header">
     <nav class="header__page-navigation">
-      <a class="header__page-navigation__button" href="./index.html">Сегодня</a>
-      <a class="header__page-navigation__button" href="./5days.html">5 дней</a>
-      <a class="header__page-navigation__button" href="./history.html">История погоды</a>
+      <a class="navigation-button" href="./index.html">Сегодня</a>
+      <a class="navigation-button" href="./5days.html">5 дней</a>
+      <a class="navigation-button" href="./history.html">История погоды</a>
     </nav>
 
     <div class="second-header">
       <img src="img/Cloudy_small.png">
       <p class="second-header__temperature">34° Ижевск, Россия</p>
-      <div class="second-header__searchbar">
-        <div class="second-header__searchbar__form">
-          <i class="fa fa-search"></i>
-          <input type="search" name="q" placeholder="Поиск" />
-        </div>
-      </div>
+      <form class="second-header__searchbar-form">
+        <input id="search" placeholder="Поиск" /> </form>
     </div>
   </header>
 
-  <main class="fivedays-table">
-    <div class="fivedays-table__row">
-      <div class="fivedays-table__row__date">
-        <span>Пт, 18 мая</span>
-      </div>
-      <div class="fivedays-table__row__date">
-        <span>Сб, 19 мая</span>
-      </div>
-      <div class="fivedays-table__row__date">
-        <span>Вс, 20 мая</span>
-      </div>
-      <div class="fivedays-table__row__date">
-        <span>Пн, 21 мая</span>
-      </div>
-      <div class="fivedays-table__row__date">
-        <span>Вт, 22 мая</span>
-      </div>
-    </div>
-
-    <div class="fivedays-table__weekdays">
-      <div class="fivedays-table__weekdays__everyday">
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Ночь</span>
-          <img src="img/Cloudy_small.png" width="32" alt="облачно">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Утро</span>
-          <img src="img/Sunny Weather_2.png" width="32" alt="ясно">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">День</span>
-          <img src="img/Weather.png" width="32" alt="гроза, дождь">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Вечер</span>
-          <img src="img/Weather_4.png" width="32" alt="дождь">
-        </div>
-      </div>
-
-      <div class="fivedays-table__weekdays__everyday">
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Ночь</span>
-          <img src="img/Cloudy_small.png" width="32" alt="облачно">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Утро</span>
-          <img src="img/Sunny Weather_2.png" width="32" alt="ясно">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">День</span>
-          <img src="img/Weather_4.png" width="32" alt="дождь">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Вечер</span>
-          <img src="img/Weather.png" width="32" alt="гроза, дождь">
-        </div>
-      </div>
-
-      <div class="fivedays-table__weekdays__everyday">
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Ночь</span>
-          <img src="img/Cloudy_small.png" width="32" alt="облачно">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Утро</span>
-          <img src="img/Weather_4.png" width="32" alt="дождь">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">День</span>
-          <img src="img/Weather.png" width="32" alt="гроза, дождь">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Вечер</span>
-          <img src="img/Sunny Weather_2.png" width="32" alt="ясно">
-        </div>
-      </div>
-
-      <div class="fivedays-table__weekdays__everyday">
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Ночь</span>
-          <img src="img/Cloudy_small.png" width="32" alt="облачно">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Утро</span>
-          <img src="img/Sunny Weather_2.png" width="32" alt="ясно">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">День</span>
-          <img src="img/Weather.png" width="32" alt="гроза, дождь">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Вечер</span>
-          <img src="img/Weather_4.png" width="32" alt="дождь">
-        </div>
-      </div>
-
-      <div class="fivedays-table__weekdays__everyday">
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Ночь</span>
-          <img src="img/Cloudy_small.png" width="32" alt="облачно">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Утро</span>
-          <img src="img/Sunny Weather_2.png" width="32" alt="ясно">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">День</span>
-          <img src="img/Weather.png" width="32" alt="гроза, дождь">
-        </div>
-        <div class="fivedays-table__weekdays__everyday__image">
-          <span class="fivedays-table__weekdays__everyday__daytime">Вечер</span>
-          <img src="img/Weather_4.png" width="32" alt="дождь">
-        </div>
-      </div>
-
-      <div class="fivedays-table__temperature">
-        <div class="fivedays-table__temperature__everyday">
-          <div class="fivedays-table__temperature__everyday__degrees__green">+8</div>
-          <div class="fivedays-table__temperature__everyday__degrees__yellow">+16</div>
-          <div class="fivedays-table__temperature__everyday__degrees__orange">+21</div>
-          <div class="fivedays-table__temperature__everyday__degrees__yellow">+17</div>
-        </div>
-        <div class="fivedays-table__temperature__everyday">
-          <div class="fivedays-table__temperature__everyday__degrees__green">+8</div>
-          <div class="fivedays-table__temperature__everyday__degrees__yellow">+16</div>
-          <div class="fivedays-table__temperature__everyday__degrees__orange">+21</div>
-          <div class="fivedays-table__temperature__everyday__degrees__yellow">+17</div>
-        </div>
-        <div class="fivedays-table__temperature__everyday">
-          <div class="fivedays-table__temperature__everyday__degrees__green">+8</div>
-          <div class="fivedays-table__temperature__everyday__degrees__yellow">+16</div>
-          <div class="fivedays-table__temperature__everyday__degrees__orange">+21</div>
-          <div class="fivedays-table__temperature__everyday__degrees__yellow">+17</div>
-        </div>
-        <div class="fivedays-table__temperature__everyday">
-          <div class="fivedays-table__temperature__everyday__degrees__green">+8</div>
-          <div class="fivedays-table__temperature__everyday__degrees__yellow">+16</div>
-          <div class="fivedays-table__temperature__everyday__degrees__orange">+21</div>
-          <div class="fivedays-table__temperature__everyday__degrees__yellow">+17</div>
-        </div>
-        <div class="fivedays-table__temperature__everyday">
-          <div class="fivedays-table__temperature__everyday__degrees__green">+8</div>
-          <div class="fivedays-table__temperature__everyday__degrees__yellow">+16</div>
-          <div class="fivedays-table__temperature__everyday__degrees__orange">+21</div>
-          <div class="fivedays-table__temperature__everyday__degrees__yellow">+17</div>
-        </div>
-      </div>
-
-      <div class="max-wind-speed">
-        <span class="max-wind-speed__text">Максимальная скорость ветра, м/с</span>
-        <div class="max-wind-speed__row">
-          <div class="max-wind-speed__row__speednumber">
-            <div class="max-wind-speed__row__speednumber__value">2</div>
-            <div class="max-wind-speed__row__speednumber__value">5</div>
-            <div class="max-wind-speed__row__speednumber__value">4</div>
-            <div class="max-wind-speed__row__speednumber__value">6</div>
+  <main class="content">
+    <section class="spreadsheet-weather">
+      <div class="spreadsheet-weather-five">
+        <div class="temperature-daytime">
+          <div class="weekday">Пт, 18 мая</div>
+          <div class="daytime">
+            <span class="daytime-text">Ночь</span>
+            <img src="img/Cloudy_small.png" width="24" alt="облачно">
           </div>
-          <div class="max-wind-speed__row__speednumber">
-            <div class="max-wind-speed__row__speednumber__value">2</div>
-            <div class="max-wind-speed__row__speednumber__value">5</div>
-            <div class="max-wind-speed__row__speednumber__value">4</div>
-            <div class="max-wind-speed__row__speednumber__value">6</div>
+          <div class="daytime">
+            <span class="daytime-text">Утро</span>
+            <img src="img/Sunny_Weather.png" width="24" alt="ясно">
           </div>
-          <div class="max-wind-speed__row__speednumber">
-            <div class="max-wind-speed__row__speednumber__value">2</div>
-            <div class="max-wind-speed__row__speednumber__value">5</div>
-            <div class="max-wind-speed__row__speednumber__value">4</div>
-            <div class="max-wind-speed__row__speednumber__value">6</div>
+          <div class="daytime">
+            <span class="daytime-text">День</span>
+            <img src="img/Weather.png" width="24" alt="гроза, дождь">
           </div>
-          <div class="max-wind-speed__row__speednumber">
-            <div class="max-wind-speed__row__speednumber__value">2</div>
-            <div class="max-wind-speed__row__speednumber__value">5</div>
-            <div class="max-wind-speed__row__speednumber__value">4</div>
-            <div class="max-wind-speed__row__speednumber__value">6</div>
+          <div class="daytime">
+            <span class="daytime-text">Вечер</span>
+            <img src="img/Weather_4.png" width="24" alt="дождь">
           </div>
-          <div class="max-wind-speed__row__speednumber">
-            <div class="max-wind-speed__row__speednumber__value">2</div>
-            <div class="max-wind-speed__row__speednumber__value">5</div>
-            <div class="max-wind-speed__row__speednumber__value">4</div>
-            <div class="max-wind-speed__row__speednumber__value">6</div>
+          <div class="daytemp">
+            <div class="daytemp-degrees-8">+8</div>
+            <div class="daytemp-degrees-16">+16</div>
+            <div class="daytemp-degrees-21">+21</div>
+            <div class="daytemp-degrees-17">+17</div>
+          </div>
+        </div>
+        <div class="temperature-daytime">
+          <div class="weekday">Сб, 19 мая</div>
+          <div class="daytime">
+            <span class="daytime-text">Ночь</span>
+            <img src="img/Cloudy_small.png" width="24" alt="облачно">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">Утро</span>
+            <img src="img/Sunny_Weather.png" width="24" alt="ясно">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">День</span>
+            <img src="img/Weather.png" width="24" alt="гроза, дождь">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">Вечер</span>
+            <img src="img/Weather_4.png" width="24" alt="дождь">
+          </div>
+          <div class="daytemp">
+            <div class="daytemp-degrees-8">+8</div>
+            <div class="daytemp-degrees-16">+16</div>
+            <div class="daytemp-degrees-21">+21</div>
+            <div class="daytemp-degrees-17">+17</div>
+          </div>
+        </div>
+        <div class="temperature-daytime">
+          <div class="weekday">Вс, 20 мая</div>
+          <div class="daytime">
+            <span class="daytime-text">Ночь</span>
+            <img src="img/Cloudy_small.png" width="24" alt="облачно">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">Утро</span>
+            <img src="img/Sunny_Weather.png" width="24" alt="ясно">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">День</span>
+            <img src="img/Weather.png" width="24" alt="гроза, дождь">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">Вечер</span>
+            <img src="img/Weather_4.png" width="24" alt="дождь">
+          </div>
+          <div class="daytemp">
+            <div class="daytemp-degrees-8">+8</div>
+            <div class="daytemp-degrees-16">+16</div>
+            <div class="daytemp-degrees-21">+21</div>
+            <div class="daytemp-degrees-17">+17</div>
+          </div>
+        </div>
+        <div class="temperature-daytime">
+          <div class="weekday">Пн, 21 мая</div>
+          <div class="daytime">
+            <span class="daytime-text">Ночь</span>
+            <img src="img/Cloudy_small.png" width="24" alt="облачно">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">Утро</span>
+            <img src="img/Sunny_Weather.png" width="24" alt="ясно">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">День</span>
+            <img src="img/Weather.png" width="24" alt="гроза, дождь">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">Вечер</span>
+            <img src="img/Weather_4.png" width="24" alt="дождь">
+          </div>
+          <div class="daytemp">
+            <div class="daytemp-degrees-8">+8</div>
+            <div class="daytemp-degrees-16">+16</div>
+            <div class="daytemp-degrees-21">+21</div>
+            <div class="daytemp-degrees-17">+17</div>
+          </div>
+        </div>
+        <div class="temperature-daytime">
+          <div class="weekday">Вт, 22 мая</div>
+          <div class="daytime">
+            <span class="daytime-text">Ночь</span>
+            <img src="img/Cloudy_small.png" width="24" alt="облачно">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">Утро</span>
+            <img src="img/Sunny_Weather.png" width="24" alt="ясно">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">День</span>
+            <img src="img/Weather.png" width="24" alt="гроза, дождь">
+          </div>
+          <div class="daytime">
+            <span class="daytime-text">Вечер</span>
+            <img src="img/Weather_4.png" width="24" alt="дождь">
+          </div>
+          <div class="daytemp">
+            <div class="daytemp-degrees-8">+8</div>
+            <div class="daytemp-degrees-16">+16</div>
+            <div class="daytemp-degrees-21">+21</div>
+            <div class="daytemp-degrees-17">+17</div>
           </div>
         </div>
       </div>
-      <div class="rainfall">
+      </div>
+
+      <div class="spreadsheet-weather-windspeed">
+        <span>Максимальная скорость ветра, м/с</span>
+      </div>
+      <div class="windspeed-everyday">
+        <div class="windspeed-everyday-daybox">
+          <div class="windspeed-everyday-day-name">Пт, 18 мая</div>
+          <div class="windspeed-everyday__day">
+            <div class="windspeed-everyday-number">2</div>
+            <div class="windspeed-everyday-number">5</div>
+            <div class="windspeed-everyday-number">4</div>
+            <div class="windspeed-everyday-number">5</div>
+          </div>
+        </div>
+        <div class="windspeed-everyday-daybox">
+          <div class="windspeed-everyday-day-name">Сб, 19 мая</div>
+          <div class="windspeed-everyday__day">
+            <div class="windspeed-everyday-number">2</div>
+            <div class="windspeed-everyday-number">5</div>
+            <div class="windspeed-everyday-number">4</div>
+            <div class="windspeed-everyday-number">5</div>
+          </div>
+        </div>
+
+        <div class="windspeed-everyday-daybox">
+          <div class="windspeed-everyday-day-name">Вс, 20 мая</div>
+          <div class="windspeed-everyday__day">
+            <div class="windspeed-everyday-number">2</div>
+            <div class="windspeed-everyday-number">5</div>
+            <div class="windspeed-everyday-number">4</div>
+            <div class="windspeed-everyday-number">5</div>
+          </div>
+        </div>
+        <div class="windspeed-everyday-daybox">
+          <div class="windspeed-everyday-day-name">Пн, 21 мая</div>
+          <div class="windspeed-everyday__day">
+            <div class="windspeed-everyday-number">2</div>
+            <div class="windspeed-everyday-number">5</div>
+            <div class="windspeed-everyday-number">4</div>
+            <div class="windspeed-everyday-number">5</div>
+          </div>
+        </div>
+        <div class="windspeed-everyday-daybox">
+          <div class="windspeed-everyday-day-name">Вт, 22 мая</div>
+          <div class="windspeed-everyday__day">
+            <div class="windspeed-everyday-number">2</div>
+            <div class="windspeed-everyday-number">5</div>
+            <div class="windspeed-everyday-number">4</div>
+            <div class="windspeed-everyday-number">5</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="precipitation">
         <span>Осадки, мм</span>
       </div>
-      <div class="rainfall__row">
-        <div class="rainfall__row__everyday">
-          <div class="rainfall__row__everyday__value">0</div>
-          <div class="rainfall__row__everyday__value">0</div>
-          <div class="rainfall__row__everyday__value">
-            <img src="img/small_wave.png" width="30">2.2
-          </div>
-          <div class="rainfall__row__everyday__value">
-            <img src="img/Big_Wave.png" width="30">4.6
-          </div>
-        </div>
-        <div class="rainfall__row__everyday">
-          <div class="rainfall__row__everyday__value">0</div>
-          <div class="rainfall__row__everyday__value">0</div>
-          <div class="rainfall__row__everyday__value">
-            <img src="img/Big_Wave.png" width="30">4.5
-          </div>
-          <div class="rainfall__row__everyday__value">
-            <img src="img/small_wave.png" width="30">2.2
+      <div class="precipitation-5-days">
+
+        <div class="precipitation-daybox">
+          <div class="windspeed-everyday-day-name">Пт, 18 мая</div>
+          <div class="precipitation-everyday">
+            <div class="precipitation-number">0</div>
+            <div class="precipitation-number">0</div>
+            <div class="precipitation-number">
+              <img class="precipitation-image" src="img/small_wave.png" width="35" height="22">2.2</div>
+            <div class="precipitation-number">
+              <img class="precipitation-image" src="img/Big_Wave.png" width="35" height="32">4.6</div>
           </div>
         </div>
-        <div class="rainfall__row__everyday">
-          <div class="rainfall__row__everyday__value">0</div>
-          <div class="rainfall__row__everyday__value">
-            <img src="img/Big_Wave.png" width="30">4.7</div>
-          <div class="rainfall__row__everyday__value">
-            <img src="img/small_wave.png" width="30">2.2
-          </div>
-          <div class="rainfall__row__everyday__value">0</div>
-        </div>
-        <div class="rainfall__row__everyday">
-          <div class="rainfall__row__everyday__value">0</div>
-          <div class="rainfall__row__everyday__value">0</div>
-          <div class="rainfall__row__everyday__value">
-            <img src="img/small_wave.png" width="30">2.2
-          </div>
-          <div class="rainfall__row__everyday__value">
-            <img src="img/Big_Wave.png" width="30">4.6
+        <div class="precipitation-daybox">
+          <div class="windspeed-everyday-day-name">Сб, 19 мая</div>
+          <div class="precipitation-everyday">
+            <div class="precipitation-number">0</div>
+            <div class="precipitation-number">0</div>
+            <div class="precipitation-number">
+              <img class="precipitation-image" src="img/Big_Wave.png" width="35" height="32">4.5</div>
+            <div class="precipitation-number">
+              <img class="precipitation-image" src="img/small_wave.png" width="35" height="22">2.2</div>
           </div>
         </div>
-        <div class="rainfall__row__everyday">
-          <div class="rainfall__row__everyday__value">0</div>
-          <div class="rainfall__row__everyday__value">0</div>
-          <div class="rainfall__row__everyday__value">
-            <img src="img/small_wave.png" width="30">2.2
+        <div class="precipitation-daybox">
+          <div class="windspeed-everyday-day-name">Вс, 20 мая</div>
+          <div class="precipitation-everyday">
+            <div class="precipitation-number">0</div>
+            <div class="precipitation-number">
+              <img class="precipitation-image" src="img/Big_Wave.png" width="35" height="32">4.7</div>
+            <div class="precipitation-number">
+              <img class="precipitation-image" src="img/small_wave.png" width="35" height="22">2.2</div>
+            <div class="precipitation-number">0</div>
           </div>
-          <div class="rainfall__row__everyday__value">
-            <img src="img/Big_Wave.png" width="30">4.6
+        </div>
+        <div class="precipitation-daybox">
+          <div class="windspeed-everyday-day-name">Пн, 21 мая</div>
+          <div class="precipitation-everyday">
+            <div class="precipitation-number">0</div>
+            <div class="precipitation-number">0</div>
+            <div class="precipitation-number">
+              <img class="precipitation-image" src="img/small_wave.png" width="35" height="22">2.2</div>
+            <div class="precipitation-number">
+              <img class="precipitation-image" src="img/Big_Wave.png" width="35" height="32">4.6</div>
+          </div>
+        </div>
+        <div class="precipitation-daybox">
+          <div class="windspeed-everyday-day-name">Вт, 22 мая</div>
+          <div class="precipitation-everyday">
+            <div class="precipitation-number">0</div>
+            <div class="precipitation-number">0</div>
+            <div class="precipitation-number">
+              <img class="precipitation-image" src="img/small_wave.png" width="35" height="22">2.2</div>
+            <div class="precipitation-number">
+              <img class="precipitation-image" src="img/Big_Wave.png" width="35" height="32">4.6</div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-
-    <section class="day-information">Пятница, 18 мая, сегодня
-      <span class="day-information__sun-moon-title">Солнце и луна</span>
     </section>
-    <section class="sun-and-moon-information">
-      <div class="sun-and-moon-information__sun">
-        <div class="sun-and-moon-information__sun__img">
-          <img src="img/Sun@2x.png" width="140" alt="солнечно">
+
+    <section class="friday-sun-moon">
+      Пятница, 18 мая, сегодня
+      <span class="sun-moon-phrase">Солнце и луна</span>
+    </section>
+
+    <section class="sun-and-moon">
+      <div class="sun-and-moon__sun">
+        <div class="sun-img">
+          <img src="img/Sun@2x.png" width="120" alt="солнце">
         </div>
-        <div class="sun-and-moon-information__sun__info">Долгота дня - 16 ч 43 мин
+        <div class="sun-additional-info">Долгота дня -- 16ч 43 мин
           <br/>
-          <br/>Восход - 4:02
+          <br/>Восход -- 4:02
           <br/>
-          <br/>Заход - 20:45
+          <br/>Заход -- 20:45
         </div>
-        <div class="sun-and-moon-information__sun__daylength">
+        <div class="daylength">
           <span>Сегодня день на 2 минуты длиннее, чем вчера</span>
         </div>
       </div>
-      <div class="sun-and-moon-information__moon">
-        <div class="sun-and-moon-information__moon__img">
-          <img src="img/Moon@2x.png" width="140" alt="луна растущая">
+      <div class="sun-and-moon__moon">
+        <div class="moon-img">
+          <img src="img/Moon@2x.png" width="120" alt="луна">
         </div>
-        <div class="sun-and-moon-information__moon__info">Луна растущая - 19%
+        <div class="moon-additional-info">Луна растущая -- 19%
           <br/>
-          <br/>Восход - 7:40
+          <br/>Восход -- 7:40
           <br/>
-          <br/>Заход - 10:58
+          <br/>Заход -- 10:58
         </div>
-        <div class="sun-and-moon-information__moon__fullmoon">
-          <span>Полнолуние - 28 июня, через 23 дня</span>
+        <div class="fullmoon">
+          <span>Полнолуние -- 28 июня, через 23 дня</span>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <center> 2018 &copy Copyright</center>
   </footer>
