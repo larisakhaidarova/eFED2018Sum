@@ -1,0 +1,23 @@
+JSON:
+
+{
+  "printWidth": 100,
+  "parser": "flow"
+}
+JS:
+
+// prettier.config.js or .prettierrc.js
+module.exports = {
+  printWidth: 100,
+  parser: "flow"
+};
+YAML:
+
+# .prettierrc
+printWidth: 100
+parser: flow
+TOML:
+
+# .prettierrc.toml
+printWidth = 100
+parser = "flow"
