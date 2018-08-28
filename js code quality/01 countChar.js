@@ -1,11 +1,13 @@
-function countChar(string, char) {
-    string = string.toLowerCase();
+function countChar(text, char) {
+    text = text.toLowerCase();
     char = char.toLowerCase();
     var counter = 0;
-    for (sym in string)
-        if (string[sym] == char)
+    for (sym in text) {
+        if (text[sym] == char) {
             counter++;
-    return counter;
+            return counter;
+        }
+    }
 }
 
 console.log(countChar('My Random String', 't'));

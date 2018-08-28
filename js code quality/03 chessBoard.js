@@ -1,13 +1,17 @@
-function makeChessBoard(even, odd) {
-    var chess = '';
-    for (var y = 0; y < even; y++) {
-        for (var x = 0; x < odd; x++) {
-            if ((x + y) % 2 === 0) chess = chess + '#';
-            else chess = chess + ' ';
-        }
-        chess = chess + '\n';
+function makeChessBoard(height, width) {
+    for (var i = 0; i < height; i++) {
+        i % 2 == 0 ? createOddLine(width) : createEvenLine(width);
+        document.write('<br/>');
     }
-    return chess;
 }
-
-console.log(makeChessBoard(4, 8));
+function createOddLine(width) {
+    for (var i = 0; i < width; i++) {
+        document.write(i % 2 == 1 ? ' ' : '#');
+    }
+}
+function createEvenLine(width) {
+    for (var i = 0; i < width; i++) {
+        document.write(i % 2 == 1 ? '#' : ' ');
+    }
+}
+console.log(makeChessBoard(8, 8));
