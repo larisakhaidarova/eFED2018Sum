@@ -672,6 +672,10 @@ html {
 		display: block;
 	}
 
+	.active-day {
+		background-color: rgb(204, 204, 204);
+	}
+
 	.friday-sun-moon {
 		margin: 0;
 		height: 40px;
@@ -723,9 +727,4 @@ html {
 	display: inline-block;
 	line-height: 2;
 	margin-right: 0.5em;
-}
-
-#slider-nav div:hover {
-	border-color: #807878;
-	background-color: #C0C0C0;
 }
