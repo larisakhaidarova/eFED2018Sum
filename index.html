@@ -41,15 +41,15 @@
                     <br/> Влажность: 45%
                     <br/> Ветер: 11 км/ч
                 </p>
-                <div class="main-info__sun-and-navigation__navigation">
-                    <button class="temp-nav index-page-nav-active">Температура</button>
-                    <button class="precipitation-nav">Вероятность осадков</button>
-                    <button class="wind-nav">Ветер</button>
+                <div id="buttons-navigation">
+                    <button class="detailedinfo active2" data-weatherbutton="0">Температура</button>
+                    <button class="detailedinfo" data-weatherbutton="1">Вероятность осадков</button>
+                    <button class="detailedinfo" data-weatherbutton="2">Ветер</button>
                 </div>
             </div>
         </div>
 
-    <section class="temperature-graph active-tab">
+    <section class="inset active-tab">
             <div class="temperature-graph-time">
               <div class="temperature-graph-numbers">
                 <div class="temperature-frame">
@@ -113,7 +113,7 @@
             </div>
     </section>
 
-    <section class="rainfall-expectancy">
+    <section class="inset">
         <div class="rainfall-percentage-and-time">
           <div class="rainfall-percentage">
             <div class="rainfall-percentage__rainfall-level">
@@ -219,7 +219,7 @@
         </div>
       </section>
 
-<section class="wind-and-time ">
+<section class="inset">
     <div class="value-arrow-hour">
         <div class="value-and-arrows">
 

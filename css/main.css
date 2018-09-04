@@ -24,7 +24,7 @@ html {
     width: 100%;
 }
 
-.navigation-button, .temp-nav, .precipitation-nav, .wind-nav {
+.navigation-button, .detailedinfo{
     cursor: pointer;
     border: 1px solid #C0C0C0;
 	display: inline-flex;
@@ -42,7 +42,7 @@ html {
     background: #A9A9A9;
 }
 
-.index-page-nav-active {
+.active2 {
 	background-color: #c5ffc5;
 }
 
@@ -121,7 +121,7 @@ html {
     margin-top: 45px;
 }
 
-.temperature-graph {
+.inset {
     color: #5DD9C1;
 	display: flex;
     flex-wrap: wrap;
@@ -417,16 +417,6 @@ html {
 
 /*====== PRECIPITATION PAGE =========*/
 
-.rainfall-expectancy {
-	display: flex;
-	flex-wrap: wrap;
-	color: #5DD9C1;
-	text-align: center;
-	padding-left: 15px;
-	padding-right: 15px;
-	display: none;
-}
-
 .rainfall-percentage-and-time {
 	display: flex;
 	flex-grow: 1;
@@ -560,16 +550,6 @@ html {
 }
 
 /*=======WIND page======*/
-
-.wind-and-time {
-	display: flex;
-	flex-wrap: wrap;
-	color: #5DD9C1;
-	text-align: center;
-	padding-left: 15px;
-	padding-right: 15px;
-	display: none;
-}
 
 .value-arrow-hour {
 	display: flex;
