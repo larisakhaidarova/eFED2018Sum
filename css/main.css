@@ -24,11 +24,10 @@ html {
     width: 100%;
 }
 
-.navigation-button {
+.navigation-button, .temp-nav, .precipitation-nav, .wind-nav {
     cursor: pointer;
     border: 1px solid #C0C0C0;
 	display: inline-flex;
-    /* margin-bottom: -1px; */
     font-size: 14px;
     color: #000000;
     text-align: center;
@@ -41,6 +40,10 @@ html {
 
 .navigation-button:hover {
     background: #A9A9A9;
+}
+
+.index-page-nav-active {
+	background-color: #c5ffc5;
 }
 
 .second-header {
@@ -125,6 +128,11 @@ html {
 	padding-left: 15px;
 	padding-right: 15px;
 	text-align: center;
+	display: none;
+}
+
+.active-tab {
+	display: flex;
 }
 
 .temperature-graph-time {
@@ -179,9 +187,9 @@ html {
 	flex-wrap: wrap;
 }
 
-.temperature-daytime {
+.temperature-daytime{
 	border: 1px solid #C0C0C0;
-	flex-grow: 1; 
+	flex-grow: 1;
 }
 
 .weekday {
@@ -246,6 +254,14 @@ html {
 	border: 1px solid #C0C0C0;
 	margin-right: 2px;
 	font-size: 10px;
+}
+
+#slider-nav {
+	display: none;
+}
+
+.previous, .next {
+	display: none;
 }
 
 .spreadsheet-weather-windspeed {
@@ -408,6 +424,7 @@ html {
 	text-align: center;
 	padding-left: 15px;
 	padding-right: 15px;
+	display: none;
 }
 
 .rainfall-percentage-and-time {
@@ -551,6 +568,7 @@ html {
 	text-align: center;
 	padding-left: 15px;
 	padding-right: 15px;
+	display: none;
 }
 
 .value-arrow-hour {
@@ -656,6 +674,18 @@ html {
 	.spreadsheet-weather {
 		padding: 40px 5px;
 	}
+
+	.temperature-daytime{
+		display: none;
+	}
+	.active {
+		display: block;
+	}
+
+	.active-day {
+		background-color: rgb(204, 204, 204);
+	}
+
 	.friday-sun-moon {
 		margin: 0;
 		height: 40px;
@@ -671,3 +701,40 @@ html {
 	.windspeed-everyday-day-name {
 		display: block;
 	}
+	/* slider bottom navigation */
+	.previous, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 30%;
+		padding: 16px;
+		color: #000000;
+		font-weight: bold;
+		font-size: 14px;
+		display: block;
+	}
+	
+	.previous {
+		left: 0;
+	}
+
+	.next{
+		right:0;
+	}
+
+	#slider-nav {
+		margin: 1em 0;
+		display: block;
+		text-align: center;
+}
+
+#slider-nav div {
+	width: 2em;
+	height: 2em;
+	border: 1px solid #b1b1b1d5;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	display: inline-block;
+	line-height: 2;
+	margin-right: 0.5em;
+}

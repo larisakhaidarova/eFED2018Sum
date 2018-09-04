@@ -28,8 +28,8 @@
 
   <main class="content">
     <section class="spreadsheet-weather">
-      <div class="spreadsheet-weather-five">
-        <div class="temperature-daytime">
+      <div class="spreadsheet-weather-five" id="fiveDaysContainer">
+        <div class="temperature-daytime active">
           <div class="weekday">Пт, 18 мая</div>
           <div class="daytime">
             <span class="daytime-text">Ночь</span>
@@ -154,7 +154,17 @@
             <div class="daytemp-degrees-17">+17</div>
           </div>
         </div>
+        <a class="previous">&#10094</a>
+        <a class="next">&#10095</a>
       </div>
+      </div>
+     
+      <div id="slider-nav">
+        <div class='slider-weekday active-day'>пт</div>
+        <div class='slider-weekday'>сб</div>
+        <div class='slider-weekday'>вс</div>
+        <div class='slider-weekday'>пн</div>
+        <div class='slider-weekday'>вт</div>
       </div>
 
       <div class="spreadsheet-weather-windspeed">
@@ -312,7 +322,7 @@
   <footer class="footer">
     <center> 2018 &copy Copyright</center>
   </footer>
-
+<script src="js/weather.js"></script>
 </body>
 
 </html>

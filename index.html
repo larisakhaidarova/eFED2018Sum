@@ -42,14 +42,14 @@
                     <br/> Ветер: 11 км/ч
                 </p>
                 <div class="main-info__sun-and-navigation__navigation">
-                    <a class="navigation-button" href="./index.html">Температура</a>
-                    <a class="navigation-button" href="./precipitation.html">Вероятность осадков</a>
-                    <a class="navigation-button" href="./wind.html">Ветер</a>
+                    <button class="temp-nav index-page-nav-active">Температура</button>
+                    <button class="precipitation-nav">Вероятность осадков</button>
+                    <button class="wind-nav">Ветер</button>
                 </div>
             </div>
         </div>
 
-    <section class="temperature-graph">
+    <section class="temperature-graph active-tab">
             <div class="temperature-graph-time">
               <div class="temperature-graph-numbers">
                 <div class="temperature-frame">
@@ -113,72 +113,254 @@
             </div>
     </section>
 
-        <section>
+    <section class="rainfall-expectancy">
+        <div class="rainfall-percentage-and-time">
+          <div class="rainfall-percentage">
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-44"></div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-23"></div>
+              <div>24%</div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-15"></div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-23"></div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-30"></div>
+              <div>30%</div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-38"></div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-37"></div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-23"></div>
+              <div>24%</div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-15"></div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-11">
+              </div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-11"></div>
+              <div>8%</div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-15"></div>
+            </div>
+          </div>
+          <div class="time-row">
+            <div class="time-of-day">17:00</div>
+            <div class="time-of-day">20:00</div>
+            <div class="time-of-day">23:00</div>
+            <div class="time-of-day">2:00</div>
+          </div>
         </div>
-        <div class="week-temperature">
-            <div class="week-temperature__everyday">
-                <p class="weekday-lilac">ср</p>
-                <img src="img/cloudy.png" alt="облачно">
-                <p>22°
-                    <span class="weekday-lilac">13°</span>
-                </p>
+        <div class="rainfall-percentage-and-time">
+          <div class="rainfall-percentage">
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-10"></div>
             </div>
-            <div class="week-temperature__everyday">
-                <p class="weekday-lilac">чт</p>
-                <img src="img/rain_light.png" alt="небольшой дождь">
-                <p>21°
-                    <span class="weekday-lilac">11°</span>
-                </p>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-9"></div>
+              <div>4%</div>
             </div>
-            <div class="week-temperature__everyday">
-                <p class="weekday-lilac">пт</p>
-                <img src="img/partly_cloudy.png" alt="небольшая облачность">
-                <p>24°
-                    <span class="weekday-lilac">12°</span>
-                </p>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-8"></div>
             </div>
-            <div class="week-temperature__everyday">
-                <p class="weekday-lilac">сб</p>
-                <img src="img/rain_s_cloudy.png" alt="дождь">
-                <p>26°
-                    <span class="weekday-lilac">13°</span>
-                </p>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-6">
+              </div>
             </div>
-            <div class="week-temperature__everyday">
-                <p class="weekday-lilac">вс</p>
-                <img src="img/partly_cloudy.png" alt="небольшая облачность">
-                <p>27°
-                    <span class="weekday-lilac">14°</span>
-                </p>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-10"></div>
+              <div>6%</div>
             </div>
-            <div class="week-temperature__everyday">
-                <p class="weekday-lilac">пн</p>
-                <img src="img/partly_cloudy.png" alt="небольшая облачность">
-                <p>28°
-                    <span class="weekday-lilac">14°</span>
-                </p>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-6"></div>
             </div>
-            <div class="week-temperature__everyday">
-                <p class="weekday-lilac">вт</p>
-                <img src="img/rain_s_cloudy.png" alt="дождь">
-                <p>28°
-                    <span class="weekday-lilac">14°</span>
-                </p>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-0"></div>
             </div>
-            <div class="week-temperature__everyday">
-                <p class="weekday-lilac">ср</p>
-                <img src="img/partly_cloudy.png" alt="небольшая облачность">
-                <p>28°
-                    <span class="weekday-lilac">14°</span>
-                </p>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-0"></div>
+              <div>0%</div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-6"></div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-6">
+              </div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-6"></div>
+              <div>1%</div>
+            </div>
+            <div class="rainfall-percentage__rainfall-level">
+              <div class="rainfall-level-10"></div>
+            </div>
+          </div>
+          <div class="time-row">
+            <div class="time-of-day">5:00</div>
+            <div class="time-of-day">8:00</div>
+            <div class="time-of-day">11:00</div>
+            <div class="time-of-day">14:00</div>
+          </div>
+        </div>
+      </section>
+
+<section class="wind-and-time ">
+    <div class="value-arrow-hour">
+        <div class="value-and-arrows">
+
+            <div class="value-and-arrows__wind-speed">
+                <div class="wind-320-degrees">
+                    <img src="img/Wind_arrow.png" width="40px" alt="ветер северо-восточный">
+                </div>
+                <div>7 м/с</div>
+            </div>
+
+            <div class="value-and-arrows__wind-speed">
+                <div class="wind-320-degrees">
+                    <img src="img/Wind_arrow.png" width="40px" alt="ветер северо-восточный">
+                </div>
+                <div>5 м/с</div>
+            </div>
+
+            <div class="value-and-arrows__wind-speed">
+                <div class="wind-350-degrees">
+                    <img src="img/Wind_arrow.png" width="40px" alt="ветер восточный">
+                </div>
+                <div>5 м/с</div>
+            </div>
+
+            <div class="value-and-arrows__wind-speed">
+                <div class="wind-20-degrees">
+                    <img src="img/Wind_arrow.png" width="40px" alt="ветер юго-восточный">
+                </div>
+                <div>5 м/с</div>
+            </div>
+
+        </div>
+        <div class="time-row">
+            <div class="time-of-day">17:00</div>
+            <div class="time-of-day">20:00</div>
+            <div class="time-of-day">23:00</div>
+            <div class="time-of-day">2:00</div>
+        </div>
+    </div>
+    <div class="value-arrow-hour">
+        <div class="value-and-arrows">
+            <div class="value-and-arrows__wind-speed">
+                <div class="wind-20-degrees">
+                    <img src="img/Wind_arrow.png" width="40px" alt="ветер юго-восточный">
+                </div>
+                <div>6 м/с</div>
+            </div>
+            <div class="value-and-arrows__wind-speed">
+                <div class="wind-20-degrees">
+                    <img src="img/Wind_arrow.png" width="40px" alt="ветер юго-восточный">
+                </div>
+                <div>6 м/с</div>
+            </div>
+            <div class="value-and-arrows__wind-speed">
+                <div class="wind-20-degrees">
+                    <img src="img/Wind_arrow.png" width="40px" alt="ветер юго-восточный">
+                </div>
+                <div>6 м/с</div>
+            </div>
+            <div class="value-and-arrows__wind-speed">
+                <div class="wind-20-degrees">
+                    <img src="img/Wind_arrow.png" width="40px" alt="ветер юго-восточный">
+                </div>
+                <div>5 м/с</div>
             </div>
         </div>
-    </section>
+        <div class="time-row">
+            <div class="time-of-day">5:00</div>
+            <div class="time-of-day">8:00</div>
+            <div class="time-of-day">11:00</div>
+            <div class="time-of-day">14:00</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="week-temperature">
+        <div class="week-temperature__everyday">
+            <p class="weekday-lilac">ср</p>
+            <img src="img/cloudy.png" alt="облачно">
+            <p>22°
+                <span class="weekday-lilac">13°</span>
+            </p>
+        </div>
+        <div class="week-temperature__everyday">
+            <p class="weekday-lilac">чт</p>
+            <img src="img/rain_light.png" alt="небольшой дождь">
+            <p>21°
+                <span class="weekday-lilac">11°</span>
+            </p>
+        </div>
+        <div class="week-temperature__everyday">
+            <p class="weekday-lilac">пт</p>
+            <img src="img/partly_cloudy.png" alt="небольшая облачность">
+            <p>24°
+                <span class="weekday-lilac">12°</span>
+            </p>
+        </div>
+        <div class="week-temperature__everyday">
+            <p class="weekday-lilac">сб</p>
+            <img src="img/rain_s_cloudy.png" alt="дождь">
+            <p>26°
+                <span class="weekday-lilac">13°</span>
+            </p>
+        </div>
+        <div class="week-temperature__everyday">
+            <p class="weekday-lilac">вс</p>
+            <img src="img/partly_cloudy.png" alt="небольшая облачность">
+            <p>27°
+                <span class="weekday-lilac">14°</span>
+            </p>
+        </div>
+        <div class="week-temperature__everyday">
+            <p class="weekday-lilac">пн</p>
+            <img src="img/partly_cloudy.png" alt="небольшая облачность">
+            <p>28°
+                <span class="weekday-lilac">14°</span>
+            </p>
+        </div>
+        <div class="week-temperature__everyday">
+            <p class="weekday-lilac">вт</p>
+            <img src="img/rain_s_cloudy.png" alt="дождь">
+            <p>28°
+                <span class="weekday-lilac">14°</span>
+            </p>
+        </div>
+        <div class="week-temperature__everyday">
+            <p class="weekday-lilac">ср</p>
+            <img src="img/partly_cloudy.png" alt="небольшая облачность">
+            <p>28°
+                <span class="weekday-lilac">14°</span>
+            </p>
+        </div>
+    </div>
+</section>
+
 
     <footer class="footer">
         <center> 2018 &copy Copyright</center>
     </footer>
-
+    <script src="js/tabs.js"></script>
 </body>
 
 </html>
